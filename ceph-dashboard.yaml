@@ -1,0 +1,11 @@
+apiVersion: 1 
+providers: 
+- name: 'Ceph Dashboard' 
+  torgId: 1 
+  folder: 'ceph-dashboard' 
+  type: file 
+  disableDeletion: false 
+  updateIntervalSeconds: 3 
+  editable: false 
+  options: 
+    path: '/etc/grafana/dashboards/ceph-dashboard'
