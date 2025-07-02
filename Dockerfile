@@ -1,7 +1,7 @@
 # Build stage 1
 
 #FROM brew.registry.redhat.io/rh-osbs/openshift/golang-builder:rhel_9_golang_1.23 AS builder
-FROM quay.io/projectquay/golang:1.23 AS builder
+FROM quay.io/projectquay/golang:1.24 AS builder
 
 COPY grafana grafana
 
