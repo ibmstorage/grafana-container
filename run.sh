@@ -56,4 +56,5 @@ exec grafana server                                         \
   cfg:default.paths.data="$GF_PATHS_DATA"                   \
   cfg:default.paths.logs="$GF_PATHS_LOGS"                   \
   cfg:default.paths.plugins="$GF_PATHS_PLUGINS"             \
-  cfg:default.paths.provisioning="$GF_PATHS_PROVISIONING"
+  cfg:default.paths.provisioning="$GF_PATHS_PROVISIONING"   \
+  cfg:default.paths.allow_loading_unsigned_plugins="$GF_PATHS_ALLOW_LOADING_UNSIGNED_PLUGINS"
