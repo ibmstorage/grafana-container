@@ -12,19 +12,21 @@ ENV GOFLAGS="-mod=vendor"
 RUN go run -mod vendor build.go -dev build
 
 # Build stage 2
-FROM registry.redhat.io/ubi9/ubi-minimal:latest
+FROM registry.redhat.io/ubi8/ubi:latest
 
 # Update the image to get the latest CVE updates
-RUN microdnf update -y
+RUN yum update -y --setopt=install_weak_deps=False
 
 ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
     GF_PATHS_CONFIG="/etc/grafana/grafana.ini" \
     GF_PATHS_DATA="/var/lib/grafana" \
     GF_PATHS_HOME="/usr/share/grafana" \
     GF_PATHS_LOGS="/var/log/grafana" \
-    GF_PATHS_PLUGINS="/usr/share/grafana/plugins" \
-    GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
+    GF_PATHS_PLUGINS="/usr/share/grafana/plugins-bundled" \
+    GF_PATHS_PROVISIONING="/etc/grafana/provisioning" \
+    GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS="grafana-piechart-panel vonage-status-panel"
 
+COPY plugins.tar /plugins.tar
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
 COPY --from=builder go/grafana/bin/grafana /usr/bin/grafana
 COPY --from=builder go/grafana/bin/grafana-server /usr/bin/grafana-server
@@ -40,9 +42,15 @@ COPY --from=builder go/grafana/conf/ldap.toml /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
-RUN microdnf install -y shadow-utils
+RUN dnf install -y shadow-utils
 RUN groupadd -r -g 472 grafana
 RUN useradd -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin -c "Grafana Dashboard" grafana
+
+# Install grafana dashboards from Ceph
+RUN dnf install -y ceph-grafana-dashboards
+
+# Copy ceph-dashboard yaml
+COPY ceph-dashboard.yml "$GF_PATHS_PROVISIONING/dashboards/"
 
 # Unpack plugins and update permissions
 RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
@@ -55,6 +63,7 @@ RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
              "$GF_PATHS_LOGS" \
              "$GF_PATHS_PLUGINS" \
              "$GF_PATHS_DATA" && \
+    tar -C "$GF_PATHS_PLUGINS" -xvf /plugins.tar && \
     chown -R grafana:grafana "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING" && \
     chmod -R 775 "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING" /run.sh
 
@@ -67,9 +76,9 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version=11.5.2
+LABEL version=5
 LABEL name="grafana"
-LABEL description="Red Hat Ceph Storage Grafana container"
-LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
-LABEL io.k8s.display-name="Grafana on RHEL 9"
+LABEL description="Red Hat Ceph Storage 5 Grafana container"
+LABEL summary="Provides the Grafana container on RHEL 8 for Red Hat Ceph Storage 5."
+LABEL io.k8s.display-name="Grafana on RHEL 8"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
