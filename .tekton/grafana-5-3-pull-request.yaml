@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhceph-dev/grafana:on-pr-{{revision}}
+    value: quay.io/rhceph-dev/grafana:on-pr-v5.3-{{revision}}
   - name: image-expires-after
     value: 5d
   - name: build-platforms
@@ -560,6 +560,12 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value:
+          - "v5.3"
+          - "pull-request-{{pull_request_number}}"
+          - "from-branch-{{source_branch}}"
+          - "{{target_branch}}-$(tasks.clone-repository.results.commit-timestamp)"
       runAfter:
       - build-image-index
       taskRef:
