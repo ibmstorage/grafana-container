@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhceph-dev/grafana:{{revision}}
+    value: quay.io/rhceph-dev/grafana:v5.3-{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
@@ -557,6 +557,10 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value:
+          - "v5.3"
+          - "{{target_branch}}-$(tasks.clone-repository.results.commit-timestamp)"
       runAfter:
       - build-image-index
       taskRef:
