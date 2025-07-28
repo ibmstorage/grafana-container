@@ -1996,13 +1996,13 @@ arches:
     name: perl-Encode
     evr: 4:2.97-3.el8
     sourcerpm: perl-Encode-2.97-3.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-Errno-1.28-422.el8.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-Errno-1.28-423.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 78352
-    checksum: sha256:445eb62fa7c7cf3af9f6865dd9bb6758ae35d327557a48f3c5671b130b02a9a5
+    size: 78552
+    checksum: sha256:f60c79489fb824b5101c5108256d9e6a6378869d4b2f72de951de83d6b61cc2e
     name: perl-Errno
-    evr: 1.28-422.el8
-    sourcerpm: perl-5.26.3-422.el8.src.rpm
+    evr: 1.28-423.el8_10
+    sourcerpm: perl-5.26.3-423.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-Exporter-5.72-396.el8.noarch.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 34844
@@ -2038,13 +2038,13 @@ arches:
     name: perl-HTTP-Tiny
     evr: 0.074-3.el8
     sourcerpm: perl-HTTP-Tiny-0.074-3.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-IO-1.38-422.el8.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-IO-1.38-423.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 145432
-    checksum: sha256:389a964fb8cdb4bc503679fc08fd21e13bc044dc14188ad0f5039246671fec78
+    size: 145612
+    checksum: sha256:44ed6f3703f3d9bd247f616f9a32d9a4eb14e3d2cccc0bd4a785a2d18a18be47
     name: perl-IO
-    evr: 1.38-422.el8
-    sourcerpm: perl-5.26.3-422.el8.src.rpm
+    evr: 1.38-423.el8_10
+    sourcerpm: perl-5.26.3-423.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-IO-Socket-IP-0.39-5.el8.noarch.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 47972
@@ -2171,13 +2171,13 @@ arches:
     name: perl-constant
     evr: 1.33-396.el8
     sourcerpm: perl-constant-1.33-396.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-interpreter-5.26.3-422.el8.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-interpreter-5.26.3-423.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 6607440
-    checksum: sha256:69dd0edadb5a394fd6b4f73738b7d50ac8dbcea1adbe9400869b0c2b92b11065
+    size: 6608148
+    checksum: sha256:c14e38b17676af74e832879344569d3a3de70db88ab2093f1729ed1ec0059341
     name: perl-interpreter
-    evr: 4:5.26.3-422.el8
-    sourcerpm: perl-5.26.3-422.el8.src.rpm
+    evr: 4:5.26.3-423.el8_10
+    sourcerpm: perl-5.26.3-423.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-libnet-3.11-3.el8.noarch.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 123808
@@ -2185,20 +2185,20 @@ arches:
     name: perl-libnet
     evr: 3.11-3.el8
     sourcerpm: perl-libnet-3.11-3.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-libs-5.26.3-422.el8.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-libs-5.26.3-423.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 1559584
-    checksum: sha256:07169949751526936b116b708f966bde68d4c6bc90e858f84655a26f7077fdb3
+    size: 1559160
+    checksum: sha256:b94bccb30f7dc32b0f357085d9650f07bf9c2105f83155ec777f2110c79c4125
     name: perl-libs
-    evr: 4:5.26.3-422.el8
-    sourcerpm: perl-5.26.3-422.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-macros-5.26.3-422.el8.s390x.rpm
+    evr: 4:5.26.3-423.el8_10
+    sourcerpm: perl-5.26.3-423.el8_10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-macros-5.26.3-423.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 74272
-    checksum: sha256:ec05eb57d2548a55f04fbf8a342d37f9de955d26942760caef9a8dc243b70fa8
+    size: 74456
+    checksum: sha256:484ae21f5266c2a7dbabf89ea40744142e5924fecf0569db7712f46f2a1b8bae
     name: perl-macros
-    evr: 4:5.26.3-422.el8
-    sourcerpm: perl-5.26.3-422.el8.src.rpm
+    evr: 4:5.26.3-423.el8_10
+    sourcerpm: perl-5.26.3-423.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/perl-parent-0.237-1.el8.noarch.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 20520
@@ -2460,10 +2460,10 @@ arches:
     sourcerpm: zlib-1.2.11-25.el8.src.rpm
   source: []
   module_metadata:
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/a5a9840f3e09e7e60aaf0daf326c311d0abc8c3ee950c36582b2cd9d543fec54-modules.yaml.gz
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/0752a3f9196ea3f192b7eb26629d18c59c4f07037f508241b76bcc219f8d71cd-modules.yaml.gz
     repoid: rhel-8-for-s390x-appstream-rpms
-    size: 717788
-    checksum: sha256:a5a9840f3e09e7e60aaf0daf326c311d0abc8c3ee950c36582b2cd9d543fec54
+    size: 718465
+    checksum: sha256:0752a3f9196ea3f192b7eb26629d18c59c4f07037f508241b76bcc219f8d71cd
 - arch: x86_64
   packages:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/x86_64/rhceph-tools/5/os/Packages/c/ceph-grafana-dashboards-16.2.10-275.el8cp.noarch.rpm
