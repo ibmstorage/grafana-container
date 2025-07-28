@@ -12,7 +12,7 @@ ENV GOFLAGS="-mod=vendor"
 RUN go run -mod vendor build.go -dev build
 
 # Build stage 2
-FROM registry.redhat.io/ubi9/ubi-minimal:latest
+FROM registry.redhat.io/ubi10/ubi-minimal:latest
 
 # Update the image to get the latest CVE updates
 RUN microdnf update -y
