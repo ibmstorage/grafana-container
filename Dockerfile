@@ -4,6 +4,8 @@ ARG BASE_IMAGE=brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_g
 
 FROM ${BASE_IMAGE} AS builder
 
+USER root
+
 COPY grafana grafana
 
 WORKDIR grafana
@@ -28,17 +30,17 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
     GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
-COPY --from=builder /grafana/pkg/cmd/grafana /usr/bin/grafana
-COPY --from=builder /grafana/pkg/cmd/grafana-server /usr/bin/grafana-server
-COPY --from=builder /grafana/pkg/cmd/grafana-cli /usr/bin/grafana-cli
-COPY --from=builder /grafana/conf $GF_PATHS_HOME/conf/
-COPY --from=builder /grafana/docs $GF_PATHS_HOME/docs/
-COPY --from=builder /grafana/public $GF_PATHS_HOME/public/
-COPY --from=builder /grafana/scripts $GF_PATHS_HOME/scripts/
+COPY --from=builder /opt/app-root/src/grafana/pkg/cmd/grafana /usr/bin/grafana
+COPY --from=builder /opt/app-root/src/grafana/pkg/cmd/grafana-server /usr/bin/grafana-server
+COPY --from=builder /opt/app-root/src/grafana/pkg/cmd/grafana-cli /usr/bin/grafana-cli
+COPY --from=builder /opt/app-root/src/grafana/conf $GF_PATHS_HOME/conf/
+COPY --from=builder /opt/app-root/src/grafana/docs $GF_PATHS_HOME/docs/
+COPY --from=builder /opt/app-root/src/grafana/public $GF_PATHS_HOME/public/
+COPY --from=builder /opt/app-root/src/grafana/scripts $GF_PATHS_HOME/scripts/
 
 RUN rm -rf /etc/grafana && mkdir -p /etc/grafana
-COPY --from=builder /grafana/conf/sample.ini $GF_PATHS_CONFIG
-COPY --from=builder /grafana/conf/ldap.toml /etc/grafana/ldap.toml
+COPY --from=builder /opt/app-root/src/grafana/conf/sample.ini $GF_PATHS_CONFIG
+COPY --from=builder /opt/app-root/src/grafana/conf/ldap.toml /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
