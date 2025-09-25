@@ -468,7 +468,7 @@ require github.com/grafana/grafana/apps/investigation v0.0.0-20241218083103-f46c
 require (
 	cel.dev/expr v0.18.0 // indirect
 	cloud.google.com/go/longrunning v0.6.1 // indirect
-	cuelabs.dev/go/oci/ociregistry v0.0.0-20240906074133-82eb438dd565 // indirect
+	cuelabs.dev/go/oci/ociregistry 074d06050084 // indirect
 	dario.cat/mergo v1.0.1 // indirect
 	github.com/HdrHistogram/hdrhistogram-go v1.1.2 // indirect
 	github.com/at-wat/mqtt-go v0.19.4 // indirect
