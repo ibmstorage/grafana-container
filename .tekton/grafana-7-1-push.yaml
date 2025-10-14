@@ -10,10 +10,10 @@ metadata:
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-8.1"
   creationTimestamp:
   labels:
-    appstudio.openshift.io/application: ceph-8-1
-    appstudio.openshift.io/component: grafana-8-1
+    appstudio.openshift.io/application: ceph-7-1
+    appstudio.openshift.io/component: grafana-7-1
     pipelines.appstudio.openshift.io/type: build
-  name: grafana-8-1-on-push
+  name: grafana-7-1-on-push
   namespace: ceph-tenant
 spec:
   params:
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhceph-ci/grafana:v8.1-{{revision}}
+    value: quay.io/rhceph-ci/grafana:v7.1-{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
