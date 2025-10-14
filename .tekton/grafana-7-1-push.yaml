@@ -28,7 +28,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhceph-ci/grafana:v8.1-{{revision}}
+    value: quay.io/rhceph-ci/grafana:v7.1-{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
