@@ -7,14 +7,9 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-<<<<<<< HEAD:.tekton/grafana-7-1-push.yaml
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
       == "release-7.1"
   creationTimestamp: null
-=======
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-8.1"
-  creationTimestamp:
->>>>>>> 8d16476 (Update konflux references and hermetic build):.tekton/grafana-8-1-push.yaml
   labels:
     appstudio.openshift.io/application: ceph-7-1
     appstudio.openshift.io/component: grafana-7-1
@@ -579,7 +574,7 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
       - name: ADDITIONAL_TAGS
         value:
-        - "v8.1"
+        - "v7.1"
         - "{{target_branch}}-$(tasks.clone-repository.results.commit-timestamp)"
       runAfter:
       - build-image-index
