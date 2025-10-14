@@ -641,7 +641,7 @@ spec:
     - name: netrc
       optional: true
   taskRunTemplate:
-    serviceAccountName: build-pipeline-grafana-8-1
+    serviceAccountName: build-pipeline-grafana-7-1
   workspaces:
   - name: git-auth
     secret:
