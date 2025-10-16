@@ -1,7 +1,7 @@
 # Build stage 1
 ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
 
-FROM ${BASE_IMAGE} AS builder
+FROM --platform=$BUILDPLATFORM ${BASE_IMAGE} AS builder
 ARG REMOTE_SOURCE_DIR
 
 # Grafana tends to use the fodlers from the root directory.
@@ -16,7 +16,7 @@ ENV GOFLAGS="-mod=vendor"
 RUN go run -mod vendor build.go -dev build
 
 # Build stage 2
-FROM registry.redhat.io/ubi9-minimal:latest
+FROM --platform=$BUILDPLATFORM registry.redhat.io/ubi9-minimal:latest
 ARG REMOTE_SOURCE_DIR
 
 # Update the image to get the latest CVE updates
@@ -71,7 +71,7 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version=11.5.2
+LABEL version=11.6.2
 LABEL name="grafana"
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
