@@ -27,9 +27,9 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
     GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
-COPY --from=builder /grafana/pkg/cmd/grafana /usr/bin/grafana
-COPY --from=builder /grafana/pkg/cmd/grafana-server /usr/bin/grafana-server
-COPY --from=builder /grafana/pkg/cmd/grafana-cli /usr/bin/grafana-cli
+COPY --from=builder /grafana/bin/grafana /usr/bin/grafana
+COPY --from=builder /grafana/bin/grafana-server /usr/bin/grafana-server
+COPY --from=builder /grafana/bin/grafana-cli /usr/bin/grafana-cli
 COPY --from=builder /grafana/conf $GF_PATHS_HOME/conf/
 COPY --from=builder /grafana/docs $GF_PATHS_HOME/docs/
 COPY --from=builder /grafana/public $GF_PATHS_HOME/public/
@@ -41,7 +41,7 @@ COPY --from=builder /grafana/conf/ldap.toml /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
-#RUN microdnf install -y shadow-utils
+RUN microdnf install -y shadow-utils
 RUN groupadd -r -g 472 grafana
 RUN useradd -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin -c "Grafana Dashboard" grafana
 
@@ -75,5 +75,5 @@ LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
 LABEL io.k8s.display-name="Grafana on RHEL 9"
 LABEL io.k8s.description="grafana-container"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
-LABEL cpe=cpe:/a:redhat:ceph_storage:9::el9
+LABEL cpe=cpe:/a:redhat:ceph_storage:8::el9
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
