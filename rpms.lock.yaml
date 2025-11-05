@@ -39,34 +39,34 @@ arches:
     name: filesystem
     evr: 3.18-16.el10
     sourcerpm: filesystem-3.18-16.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-2.39-46.el10_0.aarch64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-2.39-46.el10_0.4.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 1788120
-    checksum: sha256:209a73fc6615ea08d2d5acd2739347d3eb70b4178b316c73706abb9f0235dd32
+    size: 1778728
+    checksum: sha256:e536cf0e41b732b203c7a3d1289de01874a85e4d650d8bbf1794ae2e1809b359
     name: glibc
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.aarch64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.4.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 341777
-    checksum: sha256:d8ee0aa4a2368be8a8df4ff35db7e5ce0295a41dbddb1a5ee037c924499083ee
+    size: 332486
+    checksum: sha256:b4a026ce15b11610d873479c92f55a385a05cec0fbb9875f4f61546759bdaf1b
     name: glibc-common
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.aarch64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.4.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 1853501
-    checksum: sha256:99fd41ac984a24d15e4fb5f618edbb46d68f9e0d6da58e9c4bfe65fb743ee73a
+    size: 1843363
+    checksum: sha256:257782e336691ac2fac658ade23ce0cceed0c8b9a23326a80d72df4cc83776e7
     name: glibc-gconv-extra
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.aarch64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.4.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 53105
-    checksum: sha256:8567a9708a8c3a1a9365809af136808bfc503556af6cf89ee404d58330de3555
+    size: 43953
+    checksum: sha256:1d08aa807e9b83ab796eaae2c86d5a14ac93c845c592b2ea72df6a09a1aaa79f
     name: glibc-minimal-langpack
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/l/libacl-2.3.2-4.el10.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
     size: 27549
@@ -249,12 +249,12 @@ arches:
     checksum: sha256:db6c0f177b43534f8b89d8c9de1a797f87225d3dbc64d94a6be92ad4ea4cad29
     name: gcc
     evr: 14.2.1-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.4.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 19604632
-    checksum: sha256:b93dac1f1c3aaf2739fad615ccf20af8351bebe4d0814a7502f83a69aca7f9b6
+    size: 19613257
+    checksum: sha256:abf53bd496ecd2cdb98c7cc134cdf5a580b1d3efa683d61c1613a05538dc66b4
     name: glibc
-    evr: 2.39-46.el10_0
+    evr: 2.39-46.el10_0.4
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
     size: 488123
@@ -371,34 +371,34 @@ arches:
     name: filesystem
     evr: 3.18-16.el10
     sourcerpm: filesystem-3.18-16.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-2.39-46.el10_0.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-2.39-46.el10_0.4.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 3043386
-    checksum: sha256:c591e48347fc1059a7b81b589e65f12f6c4bcc13867b9ff4f0140c18218d7656
+    size: 3033829
+    checksum: sha256:0aed6e9971e810fa192bc443438431a36ca38ac4a01e812f818518ed03e8ecc9
     name: glibc
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.ppc64le.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.4.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 361428
-    checksum: sha256:2e5c4fdf50a91f8e9b1b8bc7e52644d162deddea89aeaa03e7d55c657a54b096
+    size: 352252
+    checksum: sha256:b5542b13d1aeda1a7b7c04bfc338d9dda9eabbd5571dbb384fb053e05c8cdfea
     name: glibc-common
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.ppc64le.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.4.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 1852399
-    checksum: sha256:911604fc76f4eb8ae528b4ba32469f7c323f4cb61d9cba5ff7b191a8eceb4dda
+    size: 1842328
+    checksum: sha256:92a16f69a42645bd9fb837974ad052328d798a8ceedbcfdcaae5e49a5e1428c8
     name: glibc-gconv-extra
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.ppc64le.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.4.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 53101
-    checksum: sha256:c94b8ae807993dd83e4cd3153a5a173bd930e6798e03060d3fc8459a290cb022
+    size: 43937
+    checksum: sha256:a0d3940ce06d222d244026ecabe3991136120ce9179f1d30ffbb220deafaed80
     name: glibc-minimal-langpack
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/l/libacl-2.3.2-4.el10.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
     size: 29733
@@ -581,12 +581,12 @@ arches:
     checksum: sha256:db6c0f177b43534f8b89d8c9de1a797f87225d3dbc64d94a6be92ad4ea4cad29
     name: gcc
     evr: 14.2.1-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.4.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 19604632
-    checksum: sha256:b93dac1f1c3aaf2739fad615ccf20af8351bebe4d0814a7502f83a69aca7f9b6
+    size: 19613257
+    checksum: sha256:abf53bd496ecd2cdb98c7cc134cdf5a580b1d3efa683d61c1613a05538dc66b4
     name: glibc
-    evr: 2.39-46.el10_0
+    evr: 2.39-46.el10_0.4
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
     size: 488123
@@ -703,34 +703,34 @@ arches:
     name: filesystem
     evr: 3.18-16.el10
     sourcerpm: filesystem-3.18-16.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-2.39-46.el10_0.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-2.39-46.el10_0.4.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 1918589
-    checksum: sha256:25dbecbb3a3348805c6dcf65644514e65f67f181ab929a330f6a4a3286b3d52f
+    size: 1909137
+    checksum: sha256:15e5fc0fdd40bc949f1ae2fc3a750fb5fee218fb8d29e09549b1c01eac7ca52e
     name: glibc
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.s390x.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.4.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 367667
-    checksum: sha256:c96371b1d80d206cbae148587fccc32c241a206f27ce5f746ec8ddbacf37eb45
+    size: 358723
+    checksum: sha256:75f058932508efbc2699615809af293e08e6b6097dd5b1e430d71782252e2415
     name: glibc-common
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.s390x.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.4.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 1805176
-    checksum: sha256:e8c160647a970cf955fdfaa5e32ae1d2cd7d2425ede477b8c97402e6247c1771
+    size: 1794730
+    checksum: sha256:b281fd3e4414ab83b1ef92f17fdf50c841b0a949de31f355430ff3ebae333241
     name: glibc-gconv-extra
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.s390x.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.4.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 53085
-    checksum: sha256:c964df2d571182d5b2d2946e2487701147454a9685491be7c6ebb6c14dc04408
+    size: 43925
+    checksum: sha256:3eeeca1c705a59f46172dc038069b64126ec49d908fb00bbe238b20f6a118d5e
     name: glibc-minimal-langpack
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/l/libacl-2.3.2-4.el10.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
     size: 28269
@@ -913,12 +913,12 @@ arches:
     checksum: sha256:db6c0f177b43534f8b89d8c9de1a797f87225d3dbc64d94a6be92ad4ea4cad29
     name: gcc
     evr: 14.2.1-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.4.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 19604632
-    checksum: sha256:b93dac1f1c3aaf2739fad615ccf20af8351bebe4d0814a7502f83a69aca7f9b6
+    size: 19613257
+    checksum: sha256:abf53bd496ecd2cdb98c7cc134cdf5a580b1d3efa683d61c1613a05538dc66b4
     name: glibc
-    evr: 2.39-46.el10_0
+    evr: 2.39-46.el10_0.4
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
     size: 488123
@@ -1035,34 +1035,34 @@ arches:
     name: filesystem
     evr: 3.18-16.el10
     sourcerpm: filesystem-3.18-16.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-2.39-46.el10_0.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-2.39-46.el10_0.4.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 2215283
-    checksum: sha256:5270f1762f7b0c73a5c66c2ba94284b2e969352da5dc4782c3057a39421163e7
+    size: 2206760
+    checksum: sha256:5d79f2a79fa32ad80520c40b76b7736a24a429b3a944a8dc5751a54786e82a6a
     name: glibc
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.x86_64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-common-2.39-46.el10_0.4.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 354175
-    checksum: sha256:6dd40521d697c084bd1beeeddcd13132c5c6ae94992962e9ec9d1bcfd14d916b
+    size: 345457
+    checksum: sha256:ba1075197e0f43289f14ac30323150fec494621fbc38a0523f2c67ff699dc201
     name: glibc-common
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.x86_64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.39-46.el10_0.4.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 1768940
-    checksum: sha256:37c806afabac705ea6744c233155c2d14e67daec42831743c34864b9d9666104
+    size: 1758685
+    checksum: sha256:186ca3460a019ddfc0bed5460cc45a7834b248e25feb68efe61f8f508324a449
     name: glibc-gconv-extra
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.x86_64.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-46.el10_0.4.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 53141
-    checksum: sha256:f4dff375565fb8bba215403a86eb87bcb9196c4980292481904df235a7c3c018
+    size: 43981
+    checksum: sha256:a8648b93366fbacef79c8bbfa54b1550a8e60bf585ddae9df693dab4cf01a49d
     name: glibc-minimal-langpack
-    evr: 2.39-46.el10_0
-    sourcerpm: glibc-2.39-46.el10_0.src.rpm
+    evr: 2.39-46.el10_0.4
+    sourcerpm: glibc-2.39-46.el10_0.4.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/l/libacl-2.3.2-4.el10.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
     size: 27231
@@ -1245,12 +1245,12 @@ arches:
     checksum: sha256:db6c0f177b43534f8b89d8c9de1a797f87225d3dbc64d94a6be92ad4ea4cad29
     name: gcc
     evr: 14.2.1-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.39-46.el10_0.4.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 19604632
-    checksum: sha256:b93dac1f1c3aaf2739fad615ccf20af8351bebe4d0814a7502f83a69aca7f9b6
+    size: 19613257
+    checksum: sha256:abf53bd496ecd2cdb98c7cc134cdf5a580b1d3efa683d61c1613a05538dc66b4
     name: glibc
-    evr: 2.39-46.el10_0
+    evr: 2.39-46.el10_0.4
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
     size: 488123
