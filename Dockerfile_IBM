@@ -72,12 +72,12 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version=11.6.2
+LABEL version=12.2.0
 LABEL name="grafana"
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
 LABEL io.k8s.display-name="Grafana on RHEL 9"
 LABEL io.k8s.description="grafana-container"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
-LABEL cpe=cpe:/a:redhat:ceph_storage:9::el9
+LABEL cpe=cpe:/a:redhat:ceph_storage:7::el9
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
