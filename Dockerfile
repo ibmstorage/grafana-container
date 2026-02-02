@@ -1,6 +1,6 @@
 # Build stage 1
 
-ARG BASE_IMAGE=brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_golang_1.24
+ARG BASE_IMAGE=brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_golang_1.25
 
 FROM ${BASE_IMAGE} AS builder
 
