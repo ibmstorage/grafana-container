@@ -1,23 +1,22 @@
 # Build stage 1
+
 ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
 
-FROM --platform=$BUILDPLATFORM ${BASE_IMAGE} AS builder
-ARG REMOTE_SOURCE_DIR
+FROM ${BASE_IMAGE} AS builder
 
 # Grafana tends to use the fodlers from the root directory.
 USER root
 
-COPY grafana $REMOTE_SOURCE_DIR/grafana
+COPY grafana /grafana
 
-WORKDIR $REMOTE_SOURCE_DIR/grafana
+WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
-RUN go run -mod vendor build.go -dev build
+RUN go work vendor && go run -mod vendor build.go -dev build
 
 # Build stage 2
-FROM --platform=$BUILDPLATFORM registry.redhat.io/ubi9-minimal:latest
-ARG REMOTE_SOURCE_DIR
+FROM registry.redhat.io/ubi9-minimal:latest
 
 # Update the image to get the latest CVE updates
 RUN microdnf update -y
@@ -31,20 +30,21 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
     GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/bin/grafana /usr/bin/grafana
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/bin/grafana-server /usr/bin/grafana-server
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/bin/grafana-cli /usr/bin/grafana-cli
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/conf $GF_PATHS_HOME/conf/
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/docs $GF_PATHS_HOME/docs/
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/public $GF_PATHS_HOME/public/
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/scripts $GF_PATHS_HOME/scripts/
+COPY --from=builder /grafana/bin/grafana /usr/bin/grafana
+COPY --from=builder /grafana/bin/grafana-server /usr/bin/grafana-server
+COPY --from=builder /grafana/bin/grafana-cli /usr/bin/grafana-cli
+COPY --from=builder /grafana/conf $GF_PATHS_HOME/conf/
+COPY --from=builder /grafana/docs $GF_PATHS_HOME/docs/
+COPY --from=builder /grafana/public $GF_PATHS_HOME/public/
+COPY --from=builder /grafana/scripts $GF_PATHS_HOME/scripts/
 
 RUN rm -rf /etc/grafana && mkdir -p /etc/grafana
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/conf/sample.ini $GF_PATHS_CONFIG
-COPY --from=builder $REMOTE_SOURCE_DIR/grafana/conf/ldap.toml /etc/grafana/ldap.toml
+COPY --from=builder /grafana/conf/sample.ini $GF_PATHS_CONFIG
+COPY --from=builder /grafana/conf/ldap.toml /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
+RUN microdnf install -y shadow-utils
 RUN groupadd -r -g 472 grafana
 RUN useradd -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin -c "Grafana Dashboard" grafana
 
@@ -62,6 +62,9 @@ RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
     chown -R grafana:grafana "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING" && \
     chmod -R 775 "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING" /run.sh
 
+RUN mkdir /licenses
+COPY ./licenses /licenses
+
 EXPOSE 3000
 
 USER grafana
@@ -71,12 +74,11 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version=11.6.2
-LABEL name="grafana"
+LABEL version="12.3.1"
+LABEL name=ibm-ceph/grafana-rhel9
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
 LABEL io.k8s.display-name="Grafana on RHEL 9"
 LABEL io.k8s.description="grafana-container"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
-LABEL cpe=cpe:/a:redhat:ceph_storage:8::el9
-LABEL org.opencontainers.image.created="${BUILD_DATE}"
+LABEL cpe=cpe:/a:redhat:ceph_storage:8.1::el9
