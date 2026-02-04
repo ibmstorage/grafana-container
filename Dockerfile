@@ -13,7 +13,7 @@ WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
-RUN go run -mod vendor build.go -dev build
+RUN go work vendor && go run -mod vendor build.go -dev build
 
 # Build stage 2
 FROM registry.redhat.io/ubi10-minimal:latest
@@ -75,7 +75,7 @@ ENTRYPOINT [ "/run.sh" ]
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
 LABEL version="12.3.1"
-LABEL name=rhceph/grafana-rhel9
+LABEL name=rhceph/grafana-rhel10
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
 LABEL io.k8s.display-name="Grafana on RHEL 9"
