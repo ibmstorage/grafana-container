@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhceph-ci/grafana:on-pr-v7.1-{{revision}}
+    value: quay.io/rhceph-ci/grafana:on-pr-v6.1-{{revision}}
   - name: image-expires-after
     value: 5d
   - name: build-platforms
