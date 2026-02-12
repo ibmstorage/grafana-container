@@ -577,7 +577,6 @@ spec:
       - name: ADDITIONAL_TAGS
         value:
         - "pull-request-{{pull_request_number}}"
-        - "from-branch-{{source_branch}}"
         - "{{target_branch}}-$(tasks.clone-repository.results.commit-timestamp)"
       runAfter:
       - build-image-index
