@@ -17,6 +17,9 @@ metadata:
   name: grafana-9-0-on-pull-request
   namespace: ceph-tenant
 spec:
+  timeouts:
+    pipeline: 2h
+    tasks: 2h
   params:
   - name: git-url
     value: '{{source_url}}'
