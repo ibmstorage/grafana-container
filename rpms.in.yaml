@@ -1,0 +1,15 @@
+contentOrigin:
+  repofiles:
+    - ./rpms.repo
+context:
+  bare: true
+
+arches:
+  - x86_64
+  - ppc64le
+  - s390x
+
+# taken from install package list in Dockerfile
+packages:
+  - ceph-grafana-dashboards
+  - shadow-utils
