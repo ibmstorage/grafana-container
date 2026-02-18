@@ -11,7 +11,7 @@ metadata:
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: ceph-4-3
-    appstudio.openshift.io/component: grafana-4-3
+    appstudio.openshift.io/component: rhceph-4-dashboard-rhel8-4-3
     pipelines.appstudio.openshift.io/type: build
   name: grafana-4-3-on-push
   namespace: ceph-tenant
