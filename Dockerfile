@@ -8,7 +8,7 @@ WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
-RUN go run -mod vendor build.go -dev build
+RUN go run build.go -dev build
 
 # Build stage 2
 FROM registry.redhat.io/ubi8/ubi:latest
