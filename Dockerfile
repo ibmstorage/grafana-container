@@ -2,6 +2,8 @@
 
 FROM registry.redhat.io/rhel8/go-toolset:1.13 AS builder
 
+USER root
+
 COPY grafana /grafana
 
 ENV IMPORT_PATH=github.com/grafana/grafana
