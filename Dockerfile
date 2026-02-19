@@ -4,6 +4,17 @@ FROM registry.redhat.io/rhel8/go-toolset:1.13 AS builder
 
 COPY grafana /grafana
 
+ENV IMPORT_PATH=github.com/grafana/grafana
+ENV GOPATH=/grafana
+
+WORKDIR /grafana
+RUN \
+    mv -f vendor src && \
+    mkdir -p "src/$IMPORT_PATH" && \
+    rm -rf "src/$IMPORT_PATH" && \
+    ln -s /grafana "src/$IMPORT_PATH" && \
+    ls -l "/grafana/src/$IMPORT_PATH"
+
 WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
