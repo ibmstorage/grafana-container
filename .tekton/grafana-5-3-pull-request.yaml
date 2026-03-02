@@ -36,8 +36,6 @@ spec:
     value: Dockerfile
   - name: path-context
     value: .
-  - name: prefetch-input
-    value: '{"type": "rpm", "path": "."}'
   pipelineSpec:
     description: |
       This pipeline is ideal for building multi-arch container images from a Containerfile while maintaining trust after pipeline customization.
@@ -87,11 +85,11 @@ spec:
       description: Skip checks against built image
       name: skip-checks
       type: string
-    - default: "false"
+    - default: "true"
       description: Execute the build with network isolation
       name: hermetic
       type: string
-    - default: ""
+    - default: '[{"type": "gomod", "path": "grafana"}, {"type": "rpm", "path": "."}]'
       description: Build dependencies to be prefetched by Cachi2
       name: prefetch-input
       type: string
