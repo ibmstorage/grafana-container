@@ -1,6 +1,6 @@
 # Build stage 1
 
-FROM openshift/golang-builder:rhel_8_golang_1.22 AS builder
+FROM brew.registry.redhat.io/rh-osbs/openshift/golang-builder:rhel_8_golang_1.22 AS builder
 
 COPY grafana /grafana
 
