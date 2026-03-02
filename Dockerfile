@@ -1,11 +1,10 @@
 # Build stage 1
 
-#FROM brew.registry.redhat.io/rh-osbs/openshift/golang-builder:rhel_9_golang_1.23 AS builder
-FROM quay.io/projectquay/golang:1.24 AS builder
+FROM openshift/golang-builder:rhel_8_golang_1.22 AS builder
 
-COPY grafana grafana
+COPY grafana /grafana
 
-WORKDIR grafana
+WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
@@ -26,19 +25,19 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
     GF_PATHS_PROVISIONING="/etc/grafana/provisioning" \
     GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS="grafana-piechart-panel vonage-status-panel"
 
-COPY plugins.tar /plugins.tar
+COPY files/plugins.tar /plugins.tar
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
-COPY --from=builder go/grafana/bin/grafana /usr/bin/grafana
-COPY --from=builder go/grafana/bin/grafana-server /usr/bin/grafana-server
-COPY --from=builder go/grafana/bin/grafana-cli /usr/bin/grafana-cli
-COPY --from=builder go/grafana/conf $GF_PATHS_HOME/conf/
-COPY --from=builder go/grafana/docs $GF_PATHS_HOME/docs/
-COPY --from=builder go/grafana/public $GF_PATHS_HOME/public/
-COPY --from=builder go/grafana/scripts $GF_PATHS_HOME/scripts/
+COPY --from=builder /grafana/bin/grafana /usr/bin/grafana
+COPY --from=builder /grafana/bin/grafana-server /usr/bin/grafana-server
+COPY --from=builder /grafana/bin/grafana-cli /usr/bin/grafana-cli
+COPY --from=builder /grafana/conf $GF_PATHS_HOME/conf/
+COPY --from=builder /grafana/docs $GF_PATHS_HOME/docs/
+COPY --from=builder /grafana/public $GF_PATHS_HOME/public/
+COPY --from=builder /grafana/scripts $GF_PATHS_HOME/scripts/
 
 RUN rm -rf /etc/grafana && mkdir -p /etc/grafana
-COPY --from=builder go/grafana/conf/sample.ini $GF_PATHS_CONFIG
-COPY --from=builder go/grafana/conf/ldap.toml /etc/grafana/ldap.toml
+COPY --from=builder /grafana/conf/sample.ini $GF_PATHS_CONFIG
+COPY --from=builder /grafana/conf/ldap.toml /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
@@ -50,7 +49,7 @@ RUN useradd -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin -c "Grafana Da
 RUN dnf install -y ceph-grafana-dashboards
 
 # Copy ceph-dashboard yaml
-COPY ceph-dashboard.yml "$GF_PATHS_PROVISIONING/dashboards/"
+COPY files/ceph-dashboard.yml "$GF_PATHS_PROVISIONING/dashboards/"
 
 # Unpack plugins and update permissions
 RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
