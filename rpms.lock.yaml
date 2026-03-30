@@ -130,20 +130,20 @@ arches:
     name: libxcrypt
     evr: 4.4.36-10.el10
     sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/n/ncurses-base-6.4-14.20240127.el10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/n/ncurses-base-6.4-15.20240127.el10_1.noarch.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 106442
-    checksum: sha256:24e540fa938e42ca719fd4546490d950a402c14c09c7ada465a123c4f5fc13b4
+    size: 107361
+    checksum: sha256:bfd174abe13d38f5515ef5d960d2cf57ef5c09b21a8a7ff589f6c6c6fd6d6fe6
     name: ncurses-base
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/n/ncurses-libs-6.4-14.20240127.el10.aarch64.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/n/ncurses-libs-6.4-15.20240127.el10_1.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 342171
-    checksum: sha256:25de513a40ab3a8fbb020fa5cdf23459c1ab423059854837bbb52d79c46c6224
+    size: 341502
+    checksum: sha256:8fb50a60f1d1cf382f0b3857bf15e23b767c85e93b879dc391fb55aa38fe9a47
     name: ncurses-libs
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/p/pam-libs-1.6.1-8.el10.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
     size: 58890
@@ -186,20 +186,20 @@ arches:
     name: setup
     evr: 2.14.5-7.el10
     sourcerpm: setup-2.14.5-7.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/s/shadow-utils-4.15.0-8.el10.aarch64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/s/shadow-utils-4.15.0-10.el10_1.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 1408442
-    checksum: sha256:70422e108ff0dda4699e1ca894e4df1d04d61828dc598e100a86e62d38595c77
+    size: 1415166
+    checksum: sha256:46a1d41bb20690a70814f3fa64d578e726a85f72e4f52f6b9fa9d08ab694c77f
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-    sourcerpm: shadow-utils-4.15.0-8.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/t/tzdata-2025c-1.el10.noarch.rpm
+    evr: 2:4.15.0-10.el10_1
+    sourcerpm: shadow-utils-4.15.0-10.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/t/tzdata-2026a-1.el10.noarch.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 925672
-    checksum: sha256:8e550d18b34a76c5378320a9229cef97146e8391ae5d0e943164934755bd6c3d
+    size: 933325
+    checksum: sha256:3a8adcfb37aebfd89ea89fb95a67a4d0f24a226fcacd09eddb7bdb529de2435c
     name: tzdata
-    evr: 2025c-1.el10
-    sourcerpm: tzdata-2025c-1.el10.src.rpm
+    evr: 2026a-1.el10
+    sourcerpm: tzdata-2026a-1.el10.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/a/acl-2.3.2-4.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
@@ -291,12 +291,12 @@ arches:
     checksum: sha256:3eb6dab92ac6918566b6499e71c46af6d70ebe6ca121fe0504aa08ff420c6484
     name: libxcrypt
     evr: 4.4.36-10.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/n/ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 3754389
-    checksum: sha256:bcdb7e3f20dd71395f11564f495fce3ee29d4cfdf0de7d33c374d5899359ccb8
+    size: 3757467
+    checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
-    evr: 6.4-14.20240127.el10
+    evr: 6.4-15.20240127.el10_1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/p/pam-1.6.1-8.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
     size: 1237988
@@ -321,18 +321,18 @@ arches:
     checksum: sha256:3cb2304fccb704447d3414339f703bf82e0c8adef6717d790e83a07a5e7685fe
     name: setup
     evr: 2.14.5-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-8.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-10.el10_1.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 1913456
-    checksum: sha256:de2c630290f3ebd481d04ad7b00d908a09a851025d617329efddb53b081a4fc9
+    size: 1923396
+    checksum: sha256:7f32d431c33a0feb27d513fcebd96bbe809de7e73cfa55fd47b972d4854f24cd
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el10.src.rpm
+    evr: 2:4.15.0-10.el10_1
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 914230
-    checksum: sha256:9dedddd9a31454e198b250ec1fb2f8a77c8470a48ec45b3cac44630fd25a3ea8
+    size: 924735
+    checksum: sha256:ddff016a8a15c4347bd22b5ff52b561d45545326588769813bef29f7a0a66152
     name: tzdata
-    evr: 2025c-1.el10
+    evr: 2026a-1.el10
   module_metadata: []
 - arch: ppc64le
   packages:
@@ -462,20 +462,20 @@ arches:
     name: libxcrypt
     evr: 4.4.36-10.el10
     sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/n/ncurses-base-6.4-14.20240127.el10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/n/ncurses-base-6.4-15.20240127.el10_1.noarch.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 106442
-    checksum: sha256:24e540fa938e42ca719fd4546490d950a402c14c09c7ada465a123c4f5fc13b4
+    size: 107361
+    checksum: sha256:bfd174abe13d38f5515ef5d960d2cf57ef5c09b21a8a7ff589f6c6c6fd6d6fe6
     name: ncurses-base
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/n/ncurses-libs-6.4-14.20240127.el10.ppc64le.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/n/ncurses-libs-6.4-15.20240127.el10_1.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 393707
-    checksum: sha256:85cc67b66c4a98017185ce46cb324f7d61429af9c260a07541a604dd42806a1d
+    size: 394301
+    checksum: sha256:1542ef3f7607b0b64469be6c0ac4c6ec3982a20516501fe230c123c0540ad3a9
     name: ncurses-libs
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/p/pam-libs-1.6.1-8.el10.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
     size: 64618
@@ -518,20 +518,20 @@ arches:
     name: setup
     evr: 2.14.5-7.el10
     sourcerpm: setup-2.14.5-7.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/s/shadow-utils-4.15.0-8.el10.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/s/shadow-utils-4.15.0-10.el10_1.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 1432151
-    checksum: sha256:cf897c8b1e9348387cef8cbeaeb123de3bfebc87834dab609f257650d6a1bffb
+    size: 1439794
+    checksum: sha256:7a365af1fe847f896955c648f519a537c304f58115560f1e418ad02c45cb6927
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-    sourcerpm: shadow-utils-4.15.0-8.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/t/tzdata-2025c-1.el10.noarch.rpm
+    evr: 2:4.15.0-10.el10_1
+    sourcerpm: shadow-utils-4.15.0-10.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/t/tzdata-2026a-1.el10.noarch.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 925672
-    checksum: sha256:8e550d18b34a76c5378320a9229cef97146e8391ae5d0e943164934755bd6c3d
+    size: 933325
+    checksum: sha256:3a8adcfb37aebfd89ea89fb95a67a4d0f24a226fcacd09eddb7bdb529de2435c
     name: tzdata
-    evr: 2025c-1.el10
-    sourcerpm: tzdata-2025c-1.el10.src.rpm
+    evr: 2026a-1.el10
+    sourcerpm: tzdata-2026a-1.el10.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/a/acl-2.3.2-4.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
@@ -623,12 +623,12 @@ arches:
     checksum: sha256:3eb6dab92ac6918566b6499e71c46af6d70ebe6ca121fe0504aa08ff420c6484
     name: libxcrypt
     evr: 4.4.36-10.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/n/ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 3754389
-    checksum: sha256:bcdb7e3f20dd71395f11564f495fce3ee29d4cfdf0de7d33c374d5899359ccb8
+    size: 3757467
+    checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
-    evr: 6.4-14.20240127.el10
+    evr: 6.4-15.20240127.el10_1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/p/pam-1.6.1-8.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
     size: 1237988
@@ -653,18 +653,18 @@ arches:
     checksum: sha256:3cb2304fccb704447d3414339f703bf82e0c8adef6717d790e83a07a5e7685fe
     name: setup
     evr: 2.14.5-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-8.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-10.el10_1.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 1913456
-    checksum: sha256:de2c630290f3ebd481d04ad7b00d908a09a851025d617329efddb53b081a4fc9
+    size: 1923396
+    checksum: sha256:7f32d431c33a0feb27d513fcebd96bbe809de7e73cfa55fd47b972d4854f24cd
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el10.src.rpm
+    evr: 2:4.15.0-10.el10_1
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 914230
-    checksum: sha256:9dedddd9a31454e198b250ec1fb2f8a77c8470a48ec45b3cac44630fd25a3ea8
+    size: 924735
+    checksum: sha256:ddff016a8a15c4347bd22b5ff52b561d45545326588769813bef29f7a0a66152
     name: tzdata
-    evr: 2025c-1.el10
+    evr: 2026a-1.el10
   module_metadata: []
 - arch: s390x
   packages:
@@ -794,20 +794,20 @@ arches:
     name: libxcrypt
     evr: 4.4.36-10.el10
     sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/n/ncurses-base-6.4-14.20240127.el10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/n/ncurses-base-6.4-15.20240127.el10_1.noarch.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 106442
-    checksum: sha256:24e540fa938e42ca719fd4546490d950a402c14c09c7ada465a123c4f5fc13b4
+    size: 107361
+    checksum: sha256:bfd174abe13d38f5515ef5d960d2cf57ef5c09b21a8a7ff589f6c6c6fd6d6fe6
     name: ncurses-base
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/n/ncurses-libs-6.4-14.20240127.el10.s390x.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/n/ncurses-libs-6.4-15.20240127.el10_1.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 381780
-    checksum: sha256:45e3bfc51ccfe7d339c6d3e879307c1b130798faa261f88a9df40338aefb125e
+    size: 381051
+    checksum: sha256:faa7533617caa233cbcf0199e12a32a598ba71fab3464dd5fa5725c51cbb501c
     name: ncurses-libs
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/p/pam-libs-1.6.1-8.el10.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
     size: 60159
@@ -850,20 +850,20 @@ arches:
     name: setup
     evr: 2.14.5-7.el10
     sourcerpm: setup-2.14.5-7.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/s/shadow-utils-4.15.0-8.el10.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/s/shadow-utils-4.15.0-10.el10_1.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 1420683
-    checksum: sha256:9483bcaca4306cbb6879bf49027d56f88f8db3b98057af5591a36410d5f03f23
+    size: 1425958
+    checksum: sha256:030f66a9311e57915d882caa8fce5f4f7405c895b04aa554ef287d702b8b15b6
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-    sourcerpm: shadow-utils-4.15.0-8.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/t/tzdata-2025c-1.el10.noarch.rpm
+    evr: 2:4.15.0-10.el10_1
+    sourcerpm: shadow-utils-4.15.0-10.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/t/tzdata-2026a-1.el10.noarch.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 925672
-    checksum: sha256:8e550d18b34a76c5378320a9229cef97146e8391ae5d0e943164934755bd6c3d
+    size: 933325
+    checksum: sha256:3a8adcfb37aebfd89ea89fb95a67a4d0f24a226fcacd09eddb7bdb529de2435c
     name: tzdata
-    evr: 2025c-1.el10
-    sourcerpm: tzdata-2025c-1.el10.src.rpm
+    evr: 2026a-1.el10
+    sourcerpm: tzdata-2026a-1.el10.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/a/acl-2.3.2-4.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
@@ -955,12 +955,12 @@ arches:
     checksum: sha256:3eb6dab92ac6918566b6499e71c46af6d70ebe6ca121fe0504aa08ff420c6484
     name: libxcrypt
     evr: 4.4.36-10.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/n/ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 3754389
-    checksum: sha256:bcdb7e3f20dd71395f11564f495fce3ee29d4cfdf0de7d33c374d5899359ccb8
+    size: 3757467
+    checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
-    evr: 6.4-14.20240127.el10
+    evr: 6.4-15.20240127.el10_1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/p/pam-1.6.1-8.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
     size: 1237988
@@ -985,18 +985,18 @@ arches:
     checksum: sha256:3cb2304fccb704447d3414339f703bf82e0c8adef6717d790e83a07a5e7685fe
     name: setup
     evr: 2.14.5-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-8.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-10.el10_1.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 1913456
-    checksum: sha256:de2c630290f3ebd481d04ad7b00d908a09a851025d617329efddb53b081a4fc9
+    size: 1923396
+    checksum: sha256:7f32d431c33a0feb27d513fcebd96bbe809de7e73cfa55fd47b972d4854f24cd
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el10.src.rpm
+    evr: 2:4.15.0-10.el10_1
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 914230
-    checksum: sha256:9dedddd9a31454e198b250ec1fb2f8a77c8470a48ec45b3cac44630fd25a3ea8
+    size: 924735
+    checksum: sha256:ddff016a8a15c4347bd22b5ff52b561d45545326588769813bef29f7a0a66152
     name: tzdata
-    evr: 2025c-1.el10
+    evr: 2026a-1.el10
   module_metadata: []
 - arch: x86_64
   packages:
@@ -1126,20 +1126,20 @@ arches:
     name: libxcrypt
     evr: 4.4.36-10.el10
     sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/n/ncurses-base-6.4-14.20240127.el10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/n/ncurses-base-6.4-15.20240127.el10_1.noarch.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 106442
-    checksum: sha256:24e540fa938e42ca719fd4546490d950a402c14c09c7ada465a123c4f5fc13b4
+    size: 107361
+    checksum: sha256:bfd174abe13d38f5515ef5d960d2cf57ef5c09b21a8a7ff589f6c6c6fd6d6fe6
     name: ncurses-base
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/n/ncurses-libs-6.4-14.20240127.el10.x86_64.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/n/ncurses-libs-6.4-15.20240127.el10_1.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 350616
-    checksum: sha256:30537897b9b75bf39efee7f7f1a4a36304b5aed6ac70549f42558974df653286
+    size: 352152
+    checksum: sha256:a028e489c8b94812269f950affa4cca905658e31eca16f37d32f60cc26783762
     name: ncurses-libs
-    evr: 6.4-14.20240127.el10
-    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+    evr: 6.4-15.20240127.el10_1
+    sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/p/pam-libs-1.6.1-8.el10.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
     size: 59039
@@ -1182,20 +1182,20 @@ arches:
     name: setup
     evr: 2.14.5-7.el10
     sourcerpm: setup-2.14.5-7.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/s/shadow-utils-4.15.0-8.el10.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/s/shadow-utils-4.15.0-10.el10_1.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 1411048
-    checksum: sha256:8d7e3846a08b620dbde011b15b8e058f579fccf3a1989c4321beaaf68631cc87
+    size: 1417015
+    checksum: sha256:668c893ef1ec32a1ae685aa6fff720433c0e49cea0f7575241f4a70337c2c03e
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-    sourcerpm: shadow-utils-4.15.0-8.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/t/tzdata-2025c-1.el10.noarch.rpm
+    evr: 2:4.15.0-10.el10_1
+    sourcerpm: shadow-utils-4.15.0-10.el10_1.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/t/tzdata-2026a-1.el10.noarch.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 925672
-    checksum: sha256:8e550d18b34a76c5378320a9229cef97146e8391ae5d0e943164934755bd6c3d
+    size: 933325
+    checksum: sha256:3a8adcfb37aebfd89ea89fb95a67a4d0f24a226fcacd09eddb7bdb529de2435c
     name: tzdata
-    evr: 2025c-1.el10
-    sourcerpm: tzdata-2025c-1.el10.src.rpm
+    evr: 2026a-1.el10
+    sourcerpm: tzdata-2026a-1.el10.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.2-4.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
@@ -1287,12 +1287,12 @@ arches:
     checksum: sha256:3eb6dab92ac6918566b6499e71c46af6d70ebe6ca121fe0504aa08ff420c6484
     name: libxcrypt
     evr: 4.4.36-10.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 3754389
-    checksum: sha256:bcdb7e3f20dd71395f11564f495fce3ee29d4cfdf0de7d33c374d5899359ccb8
+    size: 3757467
+    checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
-    evr: 6.4-14.20240127.el10
+    evr: 6.4-15.20240127.el10_1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-8.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
     size: 1237988
@@ -1317,16 +1317,16 @@ arches:
     checksum: sha256:3cb2304fccb704447d3414339f703bf82e0c8adef6717d790e83a07a5e7685fe
     name: setup
     evr: 2.14.5-7.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-8.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-10.el10_1.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 1913456
-    checksum: sha256:de2c630290f3ebd481d04ad7b00d908a09a851025d617329efddb53b081a4fc9
+    size: 1923396
+    checksum: sha256:7f32d431c33a0feb27d513fcebd96bbe809de7e73cfa55fd47b972d4854f24cd
     name: shadow-utils
-    evr: 2:4.15.0-8.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el10.src.rpm
+    evr: 2:4.15.0-10.el10_1
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 914230
-    checksum: sha256:9dedddd9a31454e198b250ec1fb2f8a77c8470a48ec45b3cac44630fd25a3ea8
+    size: 924735
+    checksum: sha256:ddff016a8a15c4347bd22b5ff52b561d45545326588769813bef29f7a0a66152
     name: tzdata
-    evr: 2025c-1.el10
+    evr: 2026a-1.el10
   module_metadata: []
