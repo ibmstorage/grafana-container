@@ -1,4 +1,4 @@
 [submodule "grafana"]
 	path = grafana
 	url = https://github.com/ibmstorage/grafana.git
-	branch = release-9.1
+	branch = release-9.2
