@@ -82,3 +82,6 @@ LABEL io.k8s.display-name="Grafana on RHEL 10"
 LABEL io.k8s.description="grafana-container"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
 LABEL cpe=cpe:/a:redhat:ceph_storage:9.2::el9
+
+# Z-stream indicator
+LABEL Z-VERSION="9.2"
