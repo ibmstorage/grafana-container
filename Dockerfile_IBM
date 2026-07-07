@@ -1,6 +1,6 @@
 # Build stage 1
 
-ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
+ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:1.26.4
 
 FROM ${BASE_IMAGE} AS builder
 
@@ -74,7 +74,7 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version="12.4.2"
+LABEL version="12.4.5"
 LABEL name=ibm-ceph/grafana-rhel10
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 10 for Red Hat Ceph Storage"
