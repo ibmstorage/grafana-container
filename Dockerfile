@@ -1,6 +1,6 @@
 # Build stage 1
 
-ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:1.26.4
+ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
 
 FROM ${BASE_IMAGE} AS builder
 
