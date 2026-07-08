@@ -1,6 +1,6 @@
 # Build stage 1
 
-ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
+ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:1.26.4-1782980183
 
 FROM ${BASE_IMAGE} AS builder
 
@@ -13,7 +13,7 @@ WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
-RUN go work vendor && go run -mod vendor build.go -dev build
+RUN go run -mod vendor build.go -dev build
 
 # Build stage 2
 FROM registry.redhat.io/ubi10-minimal:latest
@@ -74,11 +74,14 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version="12.4.5"
-LABEL name=ibm-ceph/grafana-rhel10
+LABEL version="13.1.0"
+LABEL name=rhceph/grafana-rhel10
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 10 for Red Hat Ceph Storage"
 LABEL io.k8s.display-name="Grafana on RHEL 10"
 LABEL io.k8s.description="grafana-container"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
-LABEL cpe=cpe:/a:redhat:ceph_storage:9.1::el9
+LABEL cpe=cpe:/a:redhat:ceph_storage:9.1::el10
+
+# Z-stream indicator
+LABEL Z-VERSION="9.1z1"
