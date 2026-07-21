@@ -47,7 +47,7 @@ RUN microdnf install -y shadow-utils && \
     groupadd -r -g 472 grafana && \
     useradd  -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin \
              -c "Grafana Dashboard" grafana && \
-    mkdir -p "$GF_PATHS_HOME/.aws" && \
+    mkdir -p "$GF_PATHS_HOME/.aws" \
              "$GF_PATHS_PROVISIONING/datasources" \
              "$GF_PATHS_PROVISIONING/dashboards" \
              "$GF_PATHS_PROVISIONING/notifiers" \
