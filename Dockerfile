@@ -11,9 +11,10 @@ COPY grafana /grafana
 
 WORKDIR /grafana
 
-ENV GOFLAGS="-mod=vendor"
+RUN if [ -f /cachi2/cachi2.env ]; then . /cachi2/cachi2.env; fi && \
+    go mod download
 
-RUN go run -mod vendor build.go -dev build
+RUN make build-go
 
 # Build stage 2
 FROM registry.redhat.io/ubi10-minimal:latest
@@ -74,7 +75,7 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version="12.4.2"
+LABEL version="13.1.0"
 LABEL name=rhceph/grafana-rhel10
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 10 for Red Hat Ceph Storage"
