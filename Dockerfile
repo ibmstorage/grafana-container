@@ -11,8 +11,6 @@ COPY grafana /grafana
 
 WORKDIR /grafana
 
-#RUN if [ -f /cachi2/cachi2.env ]; then . /cachi2/cachi2.env; fi && \
-#    go mod download
 
 RUN GOFLAGS=-mod=vendor make build-go
 
@@ -30,28 +28,27 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
     GF_PATHS_PLUGINS="/usr/share/grafana/plugins" \
     GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 
+# grafana-server and grafana-cli are subcommands of the single unified
+# 'grafana' binary (pkg/cmd/grafana/main.go); only that one binary is needed.
 RUN rm -rf $GF_PATHS_HOME && mkdir -p $GF_PATHS_HOME
 COPY --from=builder /grafana/bin/grafana /usr/bin/grafana
-COPY --from=builder /grafana/bin/grafana-server /usr/bin/grafana-server
-COPY --from=builder /grafana/bin/grafana-cli /usr/bin/grafana-cli
-COPY --from=builder /grafana/conf $GF_PATHS_HOME/conf/
-COPY --from=builder /grafana/docs $GF_PATHS_HOME/docs/
-COPY --from=builder /grafana/public $GF_PATHS_HOME/public/
-COPY --from=builder /grafana/scripts $GF_PATHS_HOME/scripts/
+COPY --from=builder /grafana/conf        $GF_PATHS_HOME/conf/
+COPY --from=builder /grafana/public      $GF_PATHS_HOME/public/
+COPY --from=builder /grafana/scripts     $GF_PATHS_HOME/scripts/
 
 RUN rm -rf /etc/grafana && mkdir -p /etc/grafana
-COPY --from=builder /grafana/conf/sample.ini $GF_PATHS_CONFIG
-COPY --from=builder /grafana/conf/ldap.toml /etc/grafana/ldap.toml
+COPY --from=builder /grafana/conf/sample.ini  $GF_PATHS_CONFIG
+COPY --from=builder /grafana/conf/ldap.toml   /etc/grafana/ldap.toml
 COPY ./run.sh /run.sh
 
 # Create grafana user/group
-RUN microdnf install -y shadow-utils
-RUN groupadd -r -g 472 grafana
-RUN useradd -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin -c "Grafana Dashboard" grafana
-
-# Unpack plugins and update permissions
-RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
-    mkdir -p "$GF_PATHS_PROVISIONING/datasources" \
+RUN microdnf install -y shadow-utils && \
+    microdnf clean all && \
+    groupadd -r -g 472 grafana && \
+    useradd  -r -u 472 -g grafana -d /etc/grafana -s /sbin/nologin \
+             -c "Grafana Dashboard" grafana && \
+    mkdir -p "$GF_PATHS_HOME/.aws" && \
+             "$GF_PATHS_PROVISIONING/datasources" \
              "$GF_PATHS_PROVISIONING/dashboards" \
              "$GF_PATHS_PROVISIONING/notifiers" \
              "$GF_PATHS_PROVISIONING/plugins" \
@@ -70,7 +67,7 @@ EXPOSE 3000
 
 USER grafana
 WORKDIR /
-ENTRYPOINT [ "/run.sh" ]
+ENTRYPOINT ["/run.sh"]
 
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
