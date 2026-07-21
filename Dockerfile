@@ -11,10 +11,10 @@ COPY grafana /grafana
 
 WORKDIR /grafana
 
-RUN if [ -f /cachi2/cachi2.env ]; then . /cachi2/cachi2.env; fi && \
-    go mod download
+#RUN if [ -f /cachi2/cachi2.env ]; then . /cachi2/cachi2.env; fi && \
+#    go mod download
 
-RUN make build-go
+RUN GOFLAGS=-mod=vendor make build-go
 
 # Build stage 2
 FROM registry.redhat.io/ubi10-minimal:latest
