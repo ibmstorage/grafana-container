@@ -1,6 +1,6 @@
 # Build stage 1
 
-FROM registry.redhat.io/ubi8/go-toolset:1.22.9 AS builder
+FROM registry.redhat.io/ubi8/go-toolset:1.26.7-1788328948 AS builder
 
 USER root
 
