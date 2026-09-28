@@ -82,4 +82,4 @@ LABEL io.openshift.tags="rhceph ceph dashboard grafana"
 LABEL cpe=cpe:/a:redhat:ceph_storage:8.1::el9
 
 # Z-stream indicator
-LABEL Z-VERSION="8.1z8"
+LABEL Z-VERSION="8.1z9"
