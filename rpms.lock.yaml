@@ -74,13 +74,13 @@ arches:
     name: libacl
     evr: 2.4.0-1.el10_2
     sourcerpm: acl-2.4.0-1.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/l/libattr-2.5.2-5.el10.aarch64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/l/libattr-2.6.0-1.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 20876
-    checksum: sha256:72ea9b5faa4a1f0333152cddb315814e138f9bd0116a8e128aac74588c430e65
+    size: 23860
+    checksum: sha256:e9a1c3b6f1a27abb914814f708db75c6d10e6abb28a94d717916ac601993415c
     name: libattr
-    evr: 2.5.2-5.el10
-    sourcerpm: attr-2.5.2-5.el10.src.rpm
+    evr: 2.6.0-1.el10_2
+    sourcerpm: attr-2.6.0-1.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/l/libcap-ng-0.8.4-6.el10.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
     size: 36958
@@ -144,13 +144,13 @@ arches:
     name: ncurses-libs
     evr: 6.4-15.20240127.el10_1
     sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/p/pam-libs-1.6.1-9.el10.aarch64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/p/pam-libs-1.6.1-9.el10_2.1.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 57148
-    checksum: sha256:62416e44defae5b82cb35f23da4142aab6f2739c01173d3f2cec01a7c30885a7
+    size: 63446
+    checksum: sha256:6300f006fd59db4b2d2ffd8f8a2f829b251738aa68bf0a6b1611140939190e01
     name: pam-libs
-    evr: 1.6.1-9.el10
-    sourcerpm: pam-1.6.1-9.el10.src.rpm
+    evr: 1.6.1-9.el10_2.1
+    sourcerpm: pam-1.6.1-9.el10_2.1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/p/pcre2-10.44-1.el10.3.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
     size: 234650
@@ -207,12 +207,12 @@ arches:
     checksum: sha256:e5e92d8353097c24e626db1760d3b715a003ae6fd87066480c25a832190fea9f
     name: acl
     evr: 2.4.0-1.el10_2
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/a/attr-2.6.0-1.el10_2.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 412581
-    checksum: sha256:6cdf8680efdc37340b8c677e3382c996eb1596cf2f1ee1df87319a90be85bb88
+    size: 414016
+    checksum: sha256:6b3f253d914bcf02b3379dce8bdb6b63c944e6a9c30f2d4bfab285aef81a3e02
     name: attr
-    evr: 2.5.2-5.el10
+    evr: 2.6.0-1.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/a/audit-4.0.3-5.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
     size: 684681
@@ -297,12 +297,12 @@ arches:
     checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
     evr: 6.4-15.20240127.el10_1
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 1238676
-    checksum: sha256:bebd129b8ad42d9c90d00a08ead01f05b5e97ea2a506333317fbe34631080fb6
+    size: 1248005
+    checksum: sha256:14861636db041fba5dd9882927effb32e89a446779dba7e127feb7dacf0b57ae
     name: pam
-    evr: 1.6.1-9.el10
+    evr: 1.6.1-9.el10_2.1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/p/pcre2-10.44-1.el10.3.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
     size: 1997003
@@ -406,13 +406,13 @@ arches:
     name: libacl
     evr: 2.4.0-1.el10_2
     sourcerpm: acl-2.4.0-1.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/l/libattr-2.5.2-5.el10.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/l/libattr-2.6.0-1.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 21601
-    checksum: sha256:5186bf352a0fb09214a4dbce1a3021ed1f1805509cc0cb2f0dd84d0390f0c8ff
+    size: 25165
+    checksum: sha256:ae7797cc75b27b04ae15d29a179a6d5728964decfc5ecda885cc0c630fd6ea9d
     name: libattr
-    evr: 2.5.2-5.el10
-    sourcerpm: attr-2.5.2-5.el10.src.rpm
+    evr: 2.6.0-1.el10_2
+    sourcerpm: attr-2.6.0-1.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/l/libcap-ng-0.8.4-6.el10.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
     size: 37882
@@ -476,13 +476,13 @@ arches:
     name: ncurses-libs
     evr: 6.4-15.20240127.el10_1
     sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/p/pam-libs-1.6.1-9.el10.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/p/pam-libs-1.6.1-9.el10_2.1.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 62917
-    checksum: sha256:e96d41d4f0fb104d09a11d3215c6fe069ffc26ef1c2f20fcf72e8353afc0a219
+    size: 69679
+    checksum: sha256:e836e681d069ff465e9e860ccbcdd7b4abf2a9e54f10862c3963fcba0c2e63f4
     name: pam-libs
-    evr: 1.6.1-9.el10
-    sourcerpm: pam-1.6.1-9.el10.src.rpm
+    evr: 1.6.1-9.el10_2.1
+    sourcerpm: pam-1.6.1-9.el10_2.1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/p/pcre2-10.44-1.el10.3.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
     size: 260095
@@ -539,12 +539,12 @@ arches:
     checksum: sha256:e5e92d8353097c24e626db1760d3b715a003ae6fd87066480c25a832190fea9f
     name: acl
     evr: 2.4.0-1.el10_2
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/a/attr-2.6.0-1.el10_2.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 412581
-    checksum: sha256:6cdf8680efdc37340b8c677e3382c996eb1596cf2f1ee1df87319a90be85bb88
+    size: 414016
+    checksum: sha256:6b3f253d914bcf02b3379dce8bdb6b63c944e6a9c30f2d4bfab285aef81a3e02
     name: attr
-    evr: 2.5.2-5.el10
+    evr: 2.6.0-1.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/a/audit-4.0.3-5.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
     size: 684681
@@ -629,12 +629,12 @@ arches:
     checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
     evr: 6.4-15.20240127.el10_1
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 1238676
-    checksum: sha256:bebd129b8ad42d9c90d00a08ead01f05b5e97ea2a506333317fbe34631080fb6
+    size: 1248005
+    checksum: sha256:14861636db041fba5dd9882927effb32e89a446779dba7e127feb7dacf0b57ae
     name: pam
-    evr: 1.6.1-9.el10
+    evr: 1.6.1-9.el10_2.1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/p/pcre2-10.44-1.el10.3.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
     size: 1997003
@@ -738,13 +738,13 @@ arches:
     name: libacl
     evr: 2.4.0-1.el10_2
     sourcerpm: acl-2.4.0-1.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/l/libattr-2.5.2-5.el10.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/l/libattr-2.6.0-1.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 21227
-    checksum: sha256:daea82f2f7d3dc9c424080da686309fe80fc42352aaf910168dbbac045eb186f
+    size: 24341
+    checksum: sha256:6ac0bee96e2f4c80e4749e0ac3fd73b9a760791c0a06f1633dacef7cf541eded
     name: libattr
-    evr: 2.5.2-5.el10
-    sourcerpm: attr-2.5.2-5.el10.src.rpm
+    evr: 2.6.0-1.el10_2
+    sourcerpm: attr-2.6.0-1.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/l/libcap-ng-0.8.4-6.el10.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
     size: 37355
@@ -808,13 +808,13 @@ arches:
     name: ncurses-libs
     evr: 6.4-15.20240127.el10_1
     sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/p/pam-libs-1.6.1-9.el10.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/p/pam-libs-1.6.1-9.el10_2.1.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 58636
-    checksum: sha256:b99c6587d1637d735cefdb1bec88ff7ea8e11861d98b28190033c2d5e8dd1388
+    size: 65178
+    checksum: sha256:bfe0c20a72969ab05b370b8e1cefd5c311b8e4c201fb5000f12c01fbc0447c43
     name: pam-libs
-    evr: 1.6.1-9.el10
-    sourcerpm: pam-1.6.1-9.el10.src.rpm
+    evr: 1.6.1-9.el10_2.1
+    sourcerpm: pam-1.6.1-9.el10_2.1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/p/pcre2-10.44-1.el10.3.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
     size: 270997
@@ -871,12 +871,12 @@ arches:
     checksum: sha256:e5e92d8353097c24e626db1760d3b715a003ae6fd87066480c25a832190fea9f
     name: acl
     evr: 2.4.0-1.el10_2
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/a/attr-2.6.0-1.el10_2.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 412581
-    checksum: sha256:6cdf8680efdc37340b8c677e3382c996eb1596cf2f1ee1df87319a90be85bb88
+    size: 414016
+    checksum: sha256:6b3f253d914bcf02b3379dce8bdb6b63c944e6a9c30f2d4bfab285aef81a3e02
     name: attr
-    evr: 2.5.2-5.el10
+    evr: 2.6.0-1.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/a/audit-4.0.3-5.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
     size: 684681
@@ -961,12 +961,12 @@ arches:
     checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
     evr: 6.4-15.20240127.el10_1
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 1238676
-    checksum: sha256:bebd129b8ad42d9c90d00a08ead01f05b5e97ea2a506333317fbe34631080fb6
+    size: 1248005
+    checksum: sha256:14861636db041fba5dd9882927effb32e89a446779dba7e127feb7dacf0b57ae
     name: pam
-    evr: 1.6.1-9.el10
+    evr: 1.6.1-9.el10_2.1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/p/pcre2-10.44-1.el10.3.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
     size: 1997003
@@ -1070,13 +1070,13 @@ arches:
     name: libacl
     evr: 2.4.0-1.el10_2
     sourcerpm: acl-2.4.0-1.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/l/libattr-2.5.2-5.el10.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/l/libattr-2.6.0-1.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 20986
-    checksum: sha256:2c6f5c350c7b87d4afda4fd1af8b6958564729da6c2e0bf9845b8cac5777fc45
+    size: 24436
+    checksum: sha256:54955655d65785b1b1cccebccb47fa460c72741bc077b6aa8b41b0b406877939
     name: libattr
-    evr: 2.5.2-5.el10
-    sourcerpm: attr-2.5.2-5.el10.src.rpm
+    evr: 2.6.0-1.el10_2
+    sourcerpm: attr-2.6.0-1.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/l/libcap-ng-0.8.4-6.el10.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
     size: 36851
@@ -1140,13 +1140,13 @@ arches:
     name: ncurses-libs
     evr: 6.4-15.20240127.el10_1
     sourcerpm: ncurses-6.4-15.20240127.el10_1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/p/pam-libs-1.6.1-9.el10.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/p/pam-libs-1.6.1-9.el10_2.1.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 57410
-    checksum: sha256:04798f1ee2887e2381586eb17f322f1c99c6993aa73c3582c5a0a1bc8d3e704c
+    size: 64026
+    checksum: sha256:3344c1cbb8ab88cf9cc94f9ea0588ee4cdfa4701299d907dd1f44e4864bf95ba
     name: pam-libs
-    evr: 1.6.1-9.el10
-    sourcerpm: pam-1.6.1-9.el10.src.rpm
+    evr: 1.6.1-9.el10_2.1
+    sourcerpm: pam-1.6.1-9.el10_2.1.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/p/pcre2-10.44-1.el10.3.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
     size: 256297
@@ -1203,12 +1203,12 @@ arches:
     checksum: sha256:e5e92d8353097c24e626db1760d3b715a003ae6fd87066480c25a832190fea9f
     name: acl
     evr: 2.4.0-1.el10_2
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.6.0-1.el10_2.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 412581
-    checksum: sha256:6cdf8680efdc37340b8c677e3382c996eb1596cf2f1ee1df87319a90be85bb88
+    size: 414016
+    checksum: sha256:6b3f253d914bcf02b3379dce8bdb6b63c944e6a9c30f2d4bfab285aef81a3e02
     name: attr
-    evr: 2.5.2-5.el10
+    evr: 2.6.0-1.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/a/audit-4.0.3-5.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
     size: 684681
@@ -1293,12 +1293,12 @@ arches:
     checksum: sha256:f31cd79c6f005f85f0fdbdac5025c1ccc2b2b9c88103fd8ca94fc523c8c4c6ec
     name: ncurses
     evr: 6.4-15.20240127.el10_1
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 1238676
-    checksum: sha256:bebd129b8ad42d9c90d00a08ead01f05b5e97ea2a506333317fbe34631080fb6
+    size: 1248005
+    checksum: sha256:14861636db041fba5dd9882927effb32e89a446779dba7e127feb7dacf0b57ae
     name: pam
-    evr: 1.6.1-9.el10
+    evr: 1.6.1-9.el10_2.1
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.44-1.el10.3.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
     size: 1997003
