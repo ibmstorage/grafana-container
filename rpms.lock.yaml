@@ -39,34 +39,34 @@ arches:
     name: filesystem
     evr: 3.18-17.el10
     sourcerpm: filesystem-3.18-17.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-2.39-128.el10_2.aarch64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-2.39-142.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 1862559
-    checksum: sha256:2ad88c46e90785bd4e185b2464832d813577898f67c7d8546f45458b3450dd30
+    size: 1862897
+    checksum: sha256:693942398cdc3433088d5430cc995950f3fbaa6effa167a5f943fdcf5239cd40
     name: glibc
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-common-2.39-128.el10_2.aarch64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-common-2.39-142.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 321144
-    checksum: sha256:b4b8734b72bf13dc204d564c1130f1b10c443931ac6c7e5c26e9425209a6a8bd
+    size: 320930
+    checksum: sha256:56082749290cadbbb493c55bd4aa1188e9d1edc1d530f740f6f4f975ae0e6186
     name: glibc-common
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.39-128.el10_2.aarch64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.39-142.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 1833613
-    checksum: sha256:5e5a674b988d8dc17a987e483cc5fdc753a42e116cf6dbe1f633fd4aa65e3b03
+    size: 1833682
+    checksum: sha256:094f4b0051fc40e45e1f527e6a4ae5e9f3be6ff0cbbbcab716800cd8623ffb4f
     name: glibc-gconv-extra
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-128.el10_2.aarch64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-142.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 32093
-    checksum: sha256:27c2f175eb9b74bc0a95425cdb2a539ffc868ae777dc362cabcc6cded0f2bd33
+    size: 31969
+    checksum: sha256:97b6d0e3bc69f29c2b86307b61a508682a8b7d93182861ace87dd13ecd906fbb
     name: glibc-minimal-langpack
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/l/libacl-2.4.0-1.el10_2.aarch64.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
     size: 33057
@@ -193,13 +193,13 @@ arches:
     name: shadow-utils
     evr: 2:4.15.0-11.el10
     sourcerpm: shadow-utils-4.15.0-11.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/t/tzdata-2026c-1.el10_2.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/os/Packages/t/tzdata-2026e-1.el10_2.noarch.rpm
     repoid: rhel-10-for-aarch64-baseos-rpms
-    size: 933332
-    checksum: sha256:9d35b124b878932bdbd612337e58d883e011632831545049a75f76a4cec56859
+    size: 936696
+    checksum: sha256:d0ce19e2ee66af9dc7b9b5c78fcbc79b0463997dcf9fbf7a63b4cd5157c41191
     name: tzdata
-    evr: 2026c-1.el10_2
-    sourcerpm: tzdata-2026c-1.el10_2.src.rpm
+    evr: 2026e-1.el10_2
+    sourcerpm: tzdata-2026e-1.el10_2.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
@@ -249,12 +249,12 @@ arches:
     checksum: sha256:57b9c819079c6ee835f87d3e8d3a25e314d5ca54ffe1868f09a52b37a923155d
     name: gcc
     evr: 14.3.1-4.4.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/g/glibc-2.39-128.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/g/glibc-2.39-142.el10_2.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 21671874
-    checksum: sha256:701da174d1bd6613f6d24cff4b702df145d9fd056573e895e7e7582b44822d6b
+    size: 21728691
+    checksum: sha256:f622cc7edfa1eebcd0e602e7960b1fedb31b79ee8b6589eef941e0f5c99f845f
     name: glibc
-    evr: 2.39-128.el10_2
+    evr: 2.39-142.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
     size: 488123
@@ -327,12 +327,12 @@ arches:
     checksum: sha256:3d54a50488a858001c1abe1df51cd16fdee2e8df2acec39f4fcd51207ad6a0b3
     name: shadow-utils
     evr: 2:4.15.0-11.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/aarch64/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
     repoid: rhel-10-for-aarch64-baseos-source-rpms
-    size: 931675
-    checksum: sha256:2636114017f38a2884138aa8d8df19af6ede7e98fd315b82be63c223c223b589
+    size: 941701
+    checksum: sha256:4c2e93fdd2e869d735dfdcdb4b54c28abfe76483e1d76685052598c96a57ded3
     name: tzdata
-    evr: 2026c-1.el10_2
+    evr: 2026e-1.el10_2
   module_metadata: []
 - arch: ppc64le
   packages:
@@ -371,34 +371,34 @@ arches:
     name: filesystem
     evr: 3.18-17.el10
     sourcerpm: filesystem-3.18-17.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-2.39-128.el10_2.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-2.39-142.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 3028997
-    checksum: sha256:694bb4aeb74d8e05ef406a8b2239b867122d85747b9f3bd9b1dc0fa25cc93368
+    size: 3028738
+    checksum: sha256:db2a4ed9e3c06bb7d22953cf93e231aca25df94c73384b3ec3240f5b9179e0e2
     name: glibc
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-common-2.39-128.el10_2.ppc64le.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-common-2.39-142.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 340502
-    checksum: sha256:d117ac437aaa7df66e001fb54014032a85f2209105084cf6e5ba368ded96c663
+    size: 340451
+    checksum: sha256:c556482cb356b23af4cdfe8982590550fcc185617c5620ebc763eca74c423e10
     name: glibc-common
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.39-128.el10_2.ppc64le.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.39-142.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 1828692
-    checksum: sha256:0ff7de6c7ad99dbfa506bc7e489397d03ffc6dcc876cd78c9c05bf0d1bce3252
+    size: 1829332
+    checksum: sha256:9ab20e3afe22a8cafe11ef35a3195d598ffcbb3759c409b8616a83ddd1bf0e13
     name: glibc-gconv-extra
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-minimal-langpack-2.39-128.el10_2.ppc64le.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/g/glibc-minimal-langpack-2.39-142.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 32077
-    checksum: sha256:016d74831bd6d61789755223482bdd568312329e9216ab184c4a8e690c085448
+    size: 31961
+    checksum: sha256:7b5d63ee4ab4f88ce0fff03eae9d34c40f42d8ec5ef78302668450f49e02ffec
     name: glibc-minimal-langpack
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/l/libacl-2.4.0-1.el10_2.ppc64le.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
     size: 35424
@@ -525,13 +525,13 @@ arches:
     name: shadow-utils
     evr: 2:4.15.0-11.el10
     sourcerpm: shadow-utils-4.15.0-11.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/t/tzdata-2026c-1.el10_2.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/os/Packages/t/tzdata-2026e-1.el10_2.noarch.rpm
     repoid: rhel-10-for-ppc64le-baseos-rpms
-    size: 933332
-    checksum: sha256:9d35b124b878932bdbd612337e58d883e011632831545049a75f76a4cec56859
+    size: 936696
+    checksum: sha256:d0ce19e2ee66af9dc7b9b5c78fcbc79b0463997dcf9fbf7a63b4cd5157c41191
     name: tzdata
-    evr: 2026c-1.el10_2
-    sourcerpm: tzdata-2026c-1.el10_2.src.rpm
+    evr: 2026e-1.el10_2
+    sourcerpm: tzdata-2026e-1.el10_2.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
@@ -581,12 +581,12 @@ arches:
     checksum: sha256:57b9c819079c6ee835f87d3e8d3a25e314d5ca54ffe1868f09a52b37a923155d
     name: gcc
     evr: 14.3.1-4.4.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/g/glibc-2.39-128.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/g/glibc-2.39-142.el10_2.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 21671874
-    checksum: sha256:701da174d1bd6613f6d24cff4b702df145d9fd056573e895e7e7582b44822d6b
+    size: 21728691
+    checksum: sha256:f622cc7edfa1eebcd0e602e7960b1fedb31b79ee8b6589eef941e0f5c99f845f
     name: glibc
-    evr: 2.39-128.el10_2
+    evr: 2.39-142.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
     size: 488123
@@ -659,12 +659,12 @@ arches:
     checksum: sha256:3d54a50488a858001c1abe1df51cd16fdee2e8df2acec39f4fcd51207ad6a0b3
     name: shadow-utils
     evr: 2:4.15.0-11.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/ppc64le/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
     repoid: rhel-10-for-ppc64le-baseos-source-rpms
-    size: 931675
-    checksum: sha256:2636114017f38a2884138aa8d8df19af6ede7e98fd315b82be63c223c223b589
+    size: 941701
+    checksum: sha256:4c2e93fdd2e869d735dfdcdb4b54c28abfe76483e1d76685052598c96a57ded3
     name: tzdata
-    evr: 2026c-1.el10_2
+    evr: 2026e-1.el10_2
   module_metadata: []
 - arch: s390x
   packages:
@@ -703,34 +703,34 @@ arches:
     name: filesystem
     evr: 3.18-17.el10
     sourcerpm: filesystem-3.18-17.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-2.39-128.el10_2.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-2.39-142.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 1909162
-    checksum: sha256:4efa7273dc5cf2f7b809e08a5e89dfd0c8559acf24c4073f3ec489a91357b68e
+    size: 1909323
+    checksum: sha256:76cabd3c9f9923321f4dd41392b6b3fd87c3206e00832d5e0a8f042b402fdf4c
     name: glibc
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-common-2.39-128.el10_2.s390x.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-common-2.39-142.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 347563
-    checksum: sha256:9d8687cc0af94a1298bfe64f792e0a9f9085cec8c82b183791a1a9a2e8f50439
+    size: 347773
+    checksum: sha256:10d776c09d061f3ab95f2477420c6ae21570db9bdb3076daf0ee9f2d345c51a7
     name: glibc-common
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.39-128.el10_2.s390x.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.39-142.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 1784097
-    checksum: sha256:cfbaf286e6f9be1341b2b8ef29d78d80ffd1ac8809a26e85a694a53abade63ff
+    size: 1783667
+    checksum: sha256:2a593388223d517a9eb9a23906a627ff6b8517ecdf6bc04b9a03ddccdfa960ec
     name: glibc-gconv-extra
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.39-128.el10_2.s390x.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.39-142.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 32061
-    checksum: sha256:b03045f8681488f59b60021d25b0b87f10ecd95dd4865eae67d7aa23defc2a1b
+    size: 31957
+    checksum: sha256:f02b5f982a7802f4f6c66f935ccf1987106834ed5c1f117520782946e2b10a06
     name: glibc-minimal-langpack
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/l/libacl-2.4.0-1.el10_2.s390x.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
     size: 33421
@@ -857,13 +857,13 @@ arches:
     name: shadow-utils
     evr: 2:4.15.0-11.el10
     sourcerpm: shadow-utils-4.15.0-11.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/t/tzdata-2026c-1.el10_2.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/os/Packages/t/tzdata-2026e-1.el10_2.noarch.rpm
     repoid: rhel-10-for-s390x-baseos-rpms
-    size: 933332
-    checksum: sha256:9d35b124b878932bdbd612337e58d883e011632831545049a75f76a4cec56859
+    size: 936696
+    checksum: sha256:d0ce19e2ee66af9dc7b9b5c78fcbc79b0463997dcf9fbf7a63b4cd5157c41191
     name: tzdata
-    evr: 2026c-1.el10_2
-    sourcerpm: tzdata-2026c-1.el10_2.src.rpm
+    evr: 2026e-1.el10_2
+    sourcerpm: tzdata-2026e-1.el10_2.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
@@ -913,12 +913,12 @@ arches:
     checksum: sha256:57b9c819079c6ee835f87d3e8d3a25e314d5ca54ffe1868f09a52b37a923155d
     name: gcc
     evr: 14.3.1-4.4.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/g/glibc-2.39-128.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/g/glibc-2.39-142.el10_2.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 21671874
-    checksum: sha256:701da174d1bd6613f6d24cff4b702df145d9fd056573e895e7e7582b44822d6b
+    size: 21728691
+    checksum: sha256:f622cc7edfa1eebcd0e602e7960b1fedb31b79ee8b6589eef941e0f5c99f845f
     name: glibc
-    evr: 2.39-128.el10_2
+    evr: 2.39-142.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
     size: 488123
@@ -991,12 +991,12 @@ arches:
     checksum: sha256:3d54a50488a858001c1abe1df51cd16fdee2e8df2acec39f4fcd51207ad6a0b3
     name: shadow-utils
     evr: 2:4.15.0-11.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/s390x/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
     repoid: rhel-10-for-s390x-baseos-source-rpms
-    size: 931675
-    checksum: sha256:2636114017f38a2884138aa8d8df19af6ede7e98fd315b82be63c223c223b589
+    size: 941701
+    checksum: sha256:4c2e93fdd2e869d735dfdcdb4b54c28abfe76483e1d76685052598c96a57ded3
     name: tzdata
-    evr: 2026c-1.el10_2
+    evr: 2026e-1.el10_2
   module_metadata: []
 - arch: x86_64
   packages:
@@ -1035,34 +1035,34 @@ arches:
     name: filesystem
     evr: 3.18-17.el10
     sourcerpm: filesystem-3.18-17.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-2.39-128.el10_2.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-2.39-142.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 2206376
-    checksum: sha256:52abca1c1e3fa18532631d7a995c2c193739e226569bc6366ad372f60796599f
+    size: 2206058
+    checksum: sha256:4883eb444fc4bba504e31ea230a3720aa76341e580c661ef8200673adc1175e1
     name: glibc
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-common-2.39-128.el10_2.x86_64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-common-2.39-142.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 333314
-    checksum: sha256:18044ab8318d974b54cd3ef812340a7cc44242cd32fc3db45b90816dceee7372
+    size: 333467
+    checksum: sha256:8069e55929d8e3b2e51b8393fc1d3bf016ac4043e09dcbab5012b539be7deb4a
     name: glibc-common
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.39-128.el10_2.x86_64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.39-142.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 1749888
-    checksum: sha256:e5f0a464f1a7a2e9c3b09e32fa27479d9184d70be4a9811975b4ac3fc6423fae
+    size: 1745415
+    checksum: sha256:db522b2a4146ba8b9a9af02c4c59c66270f96048576de03f866486304521e11e
     name: glibc-gconv-extra
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-128.el10_2.x86_64.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.39-142.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 32109
-    checksum: sha256:e5c47cf2079ad177d11872dc8a5084b51a64c24f727e94712f2d2f1215dabdeb
+    size: 32001
+    checksum: sha256:43b64bab6c6e3c257c3e6a77abefdbf5f8ba908094b80a4438ca56a482feb47c
     name: glibc-minimal-langpack
-    evr: 2.39-128.el10_2
-    sourcerpm: glibc-2.39-128.el10_2.src.rpm
+    evr: 2.39-142.el10_2
+    sourcerpm: glibc-2.39-142.el10_2.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/l/libacl-2.4.0-1.el10_2.x86_64.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
     size: 32638
@@ -1189,13 +1189,13 @@ arches:
     name: shadow-utils
     evr: 2:4.15.0-11.el10
     sourcerpm: shadow-utils-4.15.0-11.el10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/t/tzdata-2026c-1.el10_2.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/os/Packages/t/tzdata-2026e-1.el10_2.noarch.rpm
     repoid: rhel-10-for-x86_64-baseos-rpms
-    size: 933332
-    checksum: sha256:9d35b124b878932bdbd612337e58d883e011632831545049a75f76a4cec56859
+    size: 936696
+    checksum: sha256:d0ce19e2ee66af9dc7b9b5c78fcbc79b0463997dcf9fbf7a63b4cd5157c41191
     name: tzdata
-    evr: 2026c-1.el10_2
-    sourcerpm: tzdata-2026c-1.el10_2.src.rpm
+    evr: 2026e-1.el10_2
+    sourcerpm: tzdata-2026e-1.el10_2.src.rpm
   source:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
@@ -1245,12 +1245,12 @@ arches:
     checksum: sha256:57b9c819079c6ee835f87d3e8d3a25e314d5ca54ffe1868f09a52b37a923155d
     name: gcc
     evr: 14.3.1-4.4.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.39-128.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.39-142.el10_2.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 21671874
-    checksum: sha256:701da174d1bd6613f6d24cff4b702df145d9fd056573e895e7e7582b44822d6b
+    size: 21728691
+    checksum: sha256:f622cc7edfa1eebcd0e602e7960b1fedb31b79ee8b6589eef941e0f5c99f845f
     name: glibc
-    evr: 2.39-128.el10_2
+    evr: 2.39-142.el10_2
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.4-6.el10.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
     size: 488123
@@ -1323,10 +1323,10 @@ arches:
     checksum: sha256:3d54a50488a858001c1abe1df51cd16fdee2e8df2acec39f4fcd51207ad6a0b3
     name: shadow-utils
     evr: 2:4.15.0-11.el10
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
     repoid: rhel-10-for-x86_64-baseos-source-rpms
-    size: 931675
-    checksum: sha256:2636114017f38a2884138aa8d8df19af6ede7e98fd315b82be63c223c223b589
+    size: 941701
+    checksum: sha256:4c2e93fdd2e869d735dfdcdb4b54c28abfe76483e1d76685052598c96a57ded3
     name: tzdata
-    evr: 2026c-1.el10_2
+    evr: 2026e-1.el10_2
   module_metadata: []
