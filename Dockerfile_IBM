@@ -16,7 +16,7 @@ ENV GOFLAGS="-mod=vendor"
 RUN go run -mod vendor build.go -dev build
 
 # Build stage 2
-FROM --platform=$BUILDPLATFORM registry.redhat.io/ubi9-minimal:latest
+FROM --platform=$BUILDPLATFORM registry.redhat.io/ubi9/ubi-minimal-pqc:latest
 ARG REMOTE_SOURCE_DIR
 
 # Update the image to get the latest CVE updates
