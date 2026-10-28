@@ -2460,10 +2460,10 @@ arches:
     sourcerpm: zlib-1.2.11-25.el8.src.rpm
   source: []
   module_metadata:
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/893c203fccae9436bb7261a9d2c7aed5106b3a5d1e80850660449c9edcfa8928-modules.yaml.gz
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/ec60c5d145b529272b9f9f4dd7eee5d2abe8d6992630fd25013c37b7cbf46444-modules.yaml.gz
     repoid: rhel-8-for-s390x-appstream-rpms
-    size: 857978
-    checksum: sha256:893c203fccae9436bb7261a9d2c7aed5106b3a5d1e80850660449c9edcfa8928
+    size: 860197
+    checksum: sha256:ec60c5d145b529272b9f9f4dd7eee5d2abe8d6992630fd25013c37b7cbf46444
 - arch: x86_64
   packages:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/x86_64/rhceph-tools/5/os/Packages/c/ceph-grafana-dashboards-16.2.10-275.el8cp.noarch.rpm
