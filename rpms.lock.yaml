@@ -137,13 +137,13 @@ arches:
     name: cryptsetup-libs
     evr: 2.3.7-7.el8
     sourcerpm: cryptsetup-2.3.7-7.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/c/curl-7.61.1-34.el8_10.13.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/c/curl-7.61.1-34.el8_10.18.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
-    size: 367368
-    checksum: sha256:73e90d75c124628d90ddfab419f8190052ded48f5f2275a0f0cdbddc1a81bc63
+    size: 368120
+    checksum: sha256:ae434259e763aeb2070a647544ccfed000998799e2a9b53fd6ceabe78d29c3f2
     name: curl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/c/cyrus-sasl-lib-2.1.27-6.el8_5.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
     size: 137896
@@ -242,13 +242,13 @@ arches:
     name: elfutils-libs
     evr: 0.190-2.el8
     sourcerpm: elfutils-0.190-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/e/expat-2.5.0-4.el8_10.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/e/expat-2.5.0-6.el8_10.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
-    size: 137908
-    checksum: sha256:f46808b1dbce69d15ac3935810a09f38d10d6f32007352999b296eabce6462aa
+    size: 138236
+    checksum: sha256:416f0e9adda60a7923a2c3a409d60f2d4c7a63a09fa8ec27a96cdf49f9e4e558
     name: expat
-    evr: 2.5.0-4.el8_10
-    sourcerpm: expat-2.5.0-4.el8_10.src.rpm
+    evr: 2.5.0-6.el8_10
+    sourcerpm: expat-2.5.0-6.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/f/file-5.33-27.el8_10.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
     size: 80200
@@ -536,13 +536,13 @@ arches:
     name: libcroco
     evr: 0.6.12-4.el8_2.1
     sourcerpm: libcroco-0.6.12-4.el8_2.1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.13.ppc64le.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.18.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
-    size: 331944
-    checksum: sha256:07518214127854b93e755ac8c5c3b63da2ed3f53a5750688861bbc71422de873
+    size: 332968
+    checksum: sha256:0ce964d82a4100b61d35cced9636c4ca4460453479f86aa9c52240a906386cb8
     name: libcurl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libdb-5.3.28-42.el8_4.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
     size: 807032
@@ -1289,13 +1289,13 @@ arches:
     name: cryptsetup-libs
     evr: 2.3.7-7.el8
     sourcerpm: cryptsetup-2.3.7-7.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/c/curl-7.61.1-34.el8_10.13.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/c/curl-7.61.1-34.el8_10.18.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 359908
-    checksum: sha256:60b210f5906014c0f34cc203331719e5814ddd49f2b61e581e93a2c24c953a12
+    size: 360660
+    checksum: sha256:30edf1cf4d92c28f1166181bda4cc095a08f77847d21c8afce94da57ec3745e7
     name: curl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/c/cyrus-sasl-lib-2.1.27-6.el8_5.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 123440
@@ -1394,13 +1394,13 @@ arches:
     name: ethtool
     evr: 2:5.13-2.el8
     sourcerpm: ethtool-5.13-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/e/expat-2.5.0-4.el8_10.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/e/expat-2.5.0-6.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 130932
-    checksum: sha256:838e01d30eb115ad8b58a6c3271ee9b4166bba39a33a27224f658c6e6d83a6ce
+    size: 131252
+    checksum: sha256:614c249aad89ca0132171ccd79fb00ed9ef1db07b57fe5efff267df425187e83
     name: expat
-    evr: 2.5.0-4.el8_10
-    sourcerpm: expat-2.5.0-4.el8_10.src.rpm
+    evr: 2.5.0-6.el8_10
+    sourcerpm: expat-2.5.0-6.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/f/file-5.33-27.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 79180
@@ -1618,13 +1618,13 @@ arches:
     name: libcom_err
     evr: 1.45.6-7.el8_10
     sourcerpm: e2fsprogs-1.45.6-7.el8_10.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.13.s390x.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.18.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 298240
-    checksum: sha256:aaa3ee770946d00d2a3c1b66a49853130a136afcecd3e58f2fed94b2fa95bf52
+    size: 299212
+    checksum: sha256:b3b4df4b2f7b16e4893d05514d7cd7dc99d4769185469e3158eab5d1e4237987
     name: libcurl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libdb-5.3.28-42.el8_4.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 704836
@@ -2460,10 +2460,10 @@ arches:
     sourcerpm: zlib-1.2.11-25.el8.src.rpm
   source: []
   module_metadata:
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/ec60c5d145b529272b9f9f4dd7eee5d2abe8d6992630fd25013c37b7cbf46444-modules.yaml.gz
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/1024c06a66ab488a9c16fd93b8badf0498090335575fb0d2821a6bc748e53c14-modules.yaml.gz
     repoid: rhel-8-for-s390x-appstream-rpms
-    size: 860197
-    checksum: sha256:ec60c5d145b529272b9f9f4dd7eee5d2abe8d6992630fd25013c37b7cbf46444
+    size: 861040
+    checksum: sha256:1024c06a66ab488a9c16fd93b8badf0498090335575fb0d2821a6bc748e53c14
 - arch: x86_64
   packages:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/x86_64/rhceph-tools/5/os/Packages/c/ceph-grafana-dashboards-16.2.10-275.el8cp.noarch.rpm
@@ -2599,13 +2599,13 @@ arches:
     name: cryptsetup-libs
     evr: 2.3.7-7.el8
     sourcerpm: cryptsetup-2.3.7-7.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/c/curl-7.61.1-34.el8_10.13.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/c/curl-7.61.1-34.el8_10.18.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
-    size: 363000
-    checksum: sha256:258b0862558b6d5062ea51ae3fd824580d6a4ff450079c80897a31583c64a214
+    size: 363752
+    checksum: sha256:93075bd3c505ddca7464bf6324ce4caa17735d3ff1d6712b199ce9a53a23aed4
     name: curl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/c/cyrus-sasl-lib-2.1.27-6.el8_5.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
     size: 126324
@@ -2704,13 +2704,13 @@ arches:
     name: elfutils-libs
     evr: 0.190-2.el8
     sourcerpm: elfutils-0.190-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/e/expat-2.5.0-4.el8_10.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/e/expat-2.5.0-6.el8_10.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
-    size: 136088
-    checksum: sha256:1f518333da9daa698f0d48b7782ae52df4a4bb7fadf69194cd0f9ddbd805f901
+    size: 136376
+    checksum: sha256:ca877dc7f2517d96f867052624a089b29cb4043bc142a06a7015bf941d229ee8
     name: expat
-    evr: 2.5.0-4.el8_10
-    sourcerpm: expat-2.5.0-4.el8_10.src.rpm
+    evr: 2.5.0-6.el8_10
+    sourcerpm: expat-2.5.0-6.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/f/file-5.33-27.el8_10.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
     size: 79492
@@ -2998,13 +2998,13 @@ arches:
     name: libcroco
     evr: 0.6.12-4.el8_2.1
     sourcerpm: libcroco-0.6.12-4.el8_2.1.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.13.x86_64.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libcurl-7.61.1-34.el8_10.18.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
-    size: 314724
-    checksum: sha256:237b4b768e00274dc367a80700d8bbeeac9b770fd6530e1a0afddfc96cd34e20
+    size: 315916
+    checksum: sha256:48c4b3b6d53a4290bf0c36a0bfd616bae97c4748837920f052cb0839fb601489
     name: libcurl
-    evr: 7.61.1-34.el8_10.13
-    sourcerpm: curl-7.61.1-34.el8_10.13.src.rpm
+    evr: 7.61.1-34.el8_10.18
+    sourcerpm: curl-7.61.1-34.el8_10.18.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libdb-5.3.28-42.el8_4.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
     size: 769444
