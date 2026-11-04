@@ -1,12 +1,15 @@
 # Build stage 1
 
-ARG BASE_IMAGE=brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_golang_1.24
+ARG BASE_IMAGE=registry.redhat.io/ubi9/go-toolset:latest
 
 FROM ${BASE_IMAGE} AS builder
 
-COPY grafana grafana
+# Grafana tends to use the fodlers from the root directory.
+USER root
 
-WORKDIR grafana
+COPY grafana /grafana
+
+WORKDIR /grafana
 
 ENV GOFLAGS="-mod=vendor"
 
@@ -68,7 +71,7 @@ ENTRYPOINT [ "/run.sh" ]
 # Build specific labels
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
-LABEL version=12.2.0
+LABEL version="12.3.1"
 LABEL name=rhceph/grafana-rhel9
 LABEL description="Red Hat Ceph Storage Grafana container"
 LABEL summary="Grafana container on RHEL 9 for Red Hat Ceph Storage"
