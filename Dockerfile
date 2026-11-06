@@ -84,3 +84,6 @@ LABEL summary="Provides the Grafana container on RHEL 8 for Red Hat Ceph Storage
 LABEL io.k8s.display-name="Grafana on RHEL 8"
 LABEL io.openshift.tags="rhceph ceph dashboard grafana"
 LABEL cpe=cpe:/a:redhat:ceph_storage:5.3::el8
+
+# Z-stream indicator
+LABEL Z-VERSION="5.3z9"
