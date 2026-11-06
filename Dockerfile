@@ -78,7 +78,7 @@ ENTRYPOINT [ "/run.sh" ]
 LABEL maintainer="Nizamudeen A <nia@redhat.com>"
 LABEL com.redhat.component="grafana-container"
 LABEL version=5
-LABEL name=rhceph/grafana-rhel8
+LABEL name=rhceph/rhceph-5-dashboard-rhel8
 LABEL description="Red Hat Ceph Storage 5 Grafana container"
 LABEL summary="Provides the Grafana container on RHEL 8 for Red Hat Ceph Storage 5."
 LABEL io.k8s.display-name="Grafana on RHEL 8"
