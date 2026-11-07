@@ -1096,13 +1096,13 @@ arches:
     name: trousers-lib
     evr: 0.3.15-2.el8
     sourcerpm: trousers-0.3.15-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/t/tzdata-2026e-1.el8_10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/t/tzdata-2026f-1.el8_10.noarch.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
-    size: 566324
-    checksum: sha256:01bfbadab99667b5a99af113bd034f8a2c6538dcf986a407c4648072357b4f73
+    size: 567112
+    checksum: sha256:6035c565caa2d7932cd167775b8b79cf3f8f3851a939240c5ed91e1f68e7f9b5
     name: tzdata
-    evr: 2026e-1.el8_10
-    sourcerpm: tzdata-2026e-1.el8_10.src.rpm
+    evr: 2026f-1.el8_10
+    sourcerpm: tzdata-2026f-1.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.ppc64le.rpm
     repoid: rhel-8-for-ppc64le-baseos-rpms
     size: 2701164
@@ -2430,13 +2430,13 @@ arches:
     name: trousers-lib
     evr: 0.3.15-2.el8
     sourcerpm: trousers-0.3.15-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/t/tzdata-2026e-1.el8_10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/t/tzdata-2026f-1.el8_10.noarch.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
-    size: 566324
-    checksum: sha256:01bfbadab99667b5a99af113bd034f8a2c6538dcf986a407c4648072357b4f73
+    size: 567112
+    checksum: sha256:6035c565caa2d7932cd167775b8b79cf3f8f3851a939240c5ed91e1f68e7f9b5
     name: tzdata
-    evr: 2026e-1.el8_10
-    sourcerpm: tzdata-2026e-1.el8_10.src.rpm
+    evr: 2026f-1.el8_10
+    sourcerpm: tzdata-2026f-1.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.s390x.rpm
     repoid: rhel-8-for-s390x-baseos-rpms
     size: 2498196
@@ -2460,10 +2460,10 @@ arches:
     sourcerpm: zlib-1.2.11-25.el8.src.rpm
   source: []
   module_metadata:
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/02113ea996db1a97b739296456c1e55f78a94e6612f665b315dfc158126c3930-modules.yaml.gz
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/repodata/318c18d0ed87ae9d5ee2e2ef620f7ee09c7dd923f05a54822355ae8b38acf3c2-modules.yaml.gz
     repoid: rhel-8-for-s390x-appstream-rpms
-    size: 861372
-    checksum: sha256:02113ea996db1a97b739296456c1e55f78a94e6612f665b315dfc158126c3930
+    size: 862200
+    checksum: sha256:318c18d0ed87ae9d5ee2e2ef620f7ee09c7dd923f05a54822355ae8b38acf3c2
 - arch: x86_64
   packages:
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/x86_64/rhceph-tools/5/os/Packages/c/ceph-grafana-dashboards-16.2.10-275.el8cp.noarch.rpm
@@ -3551,13 +3551,13 @@ arches:
     name: trousers-lib
     evr: 0.3.15-2.el8
     sourcerpm: trousers-0.3.15-2.el8.src.rpm
-  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/t/tzdata-2026e-1.el8_10.noarch.rpm
+  - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/t/tzdata-2026f-1.el8_10.noarch.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
-    size: 566324
-    checksum: sha256:01bfbadab99667b5a99af113bd034f8a2c6538dcf986a407c4648072357b4f73
+    size: 567112
+    checksum: sha256:6035c565caa2d7932cd167775b8b79cf3f8f3851a939240c5ed91e1f68e7f9b5
     name: tzdata
-    evr: 2026e-1.el8_10
-    sourcerpm: tzdata-2026e-1.el8_10.src.rpm
+    evr: 2026f-1.el8_10
+    sourcerpm: tzdata-2026f-1.el8_10.src.rpm
   - url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.x86_64.rpm
     repoid: rhel-8-for-x86_64-baseos-rpms
     size: 2597936
